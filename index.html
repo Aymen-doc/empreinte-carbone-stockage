@@ -1,0 +1,4419 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modélisation de l'Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9f5;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background-color: #f0f9f5;
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+        }
+        
+        .title {
+            color: #0f5c8c;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .subtitle {
+            color: #119975;
+            font-weight: 600;
+        }
+        
+        .info-box {
+            background-color: #ebf7f0;
+            border: 2px solid #2cc78a;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+        }
+        
+        .card {
+            background-color: #ebf1f9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .icon-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .footer-card {
+            background-color: #ebf1f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+        
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .service-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Main Title -->
+<h1 class="title text-4xl mb-8">Modélisation de l'Empreinte Carbone du Stockage Numérique</h1>
+<!-- Info Box -->
+<div class="info-box mb-6">
+<div class="flex items-start">
+<div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
+<i class="fas fa-pencil-alt"></i>
+</div>
+<div>
+<div class="font-bold text-green-800">Facteur d'émission de référence : 0,2095 kg CO₂/Go/an (source : Green Cloud Computing)</div>
+<div class="mt-2 flex items-start">
+<div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white mr-3 text-xs">i</div>
+<p class="text-sm text-gray-700">Qu'est-ce que c'est ? Coefficient mesurant la quantité de CO₂ émise pour stocker 1 gigaoctet de données pendant un an dans un datacenter standard.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Three Cards Row -->
+<div class="grid grid-cols-3 gap-6 mb-6">
+<!-- Card 1: Storage -->
+<div class="card flex flex-col items-center">
+<div class="icon-container bg-blue-500 text-white mb-3">
+<i class="fas fa-database"></i>
+</div>
+<h3 class="text-xl font-bold text-blue-800">500 Go stockés</h3>
+<p class="text-sm text-gray-600">~ 104,75 kg CO₂/an</p>
+</div>
+<!-- Card 2: Car Equivalent -->
+<div class="card flex flex-col items-center">
+<div class="icon-container bg-blue-500 text-white mb-3">
+<i class="fas fa-car"></i>
+</div>
+<h3 class="text-xl font-bold text-blue-800">Équivalent voiture</h3>
+<p class="text-sm text-gray-600">= 480 km thermique</p>
+</div>
+<!-- Card 3: Optimization -->
+<div class="card flex flex-col items-center">
+<div class="icon-container bg-blue-500 text-white mb-3">
+<i class="fas fa-leaf"></i>
+</div>
+<h3 class="text-xl font-bold text-blue-800">Service d'optimisation</h3>
+<p class="text-sm text-gray-600">Réduction de 70 à 90% possible</p>
+</div>
+</div>
+<!-- Footer Card: Services -->
+<div class="footer-card">
+<div class="flex items-center mb-4">
+<div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white mr-3">
+<i class="fas fa-tools"></i>
+</div>
+<h3 class="text-xl font-bold text-blue-800">Notre accompagnement sur mesure</h3>
+</div>
+<p class="mb-4 text-sm text-gray-700">Systnaps vous propose des solutions concrètes pour réduire l'empreinte carbone de votre stockage numérique :</p>
+<div class="grid grid-cols-3 gap-4">
+<!-- Service 1 -->
+<div class="service-item">
+<div class="service-icon bg-blue-500">
+<i class="fas fa-search"></i>
+</div>
+<div>
+<div class="font-bold text-blue-800">Évaluation précise</div>
+<p class="text-xs text-gray-600">Mesure de votre empreinte carbone actuelle</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="service-item">
+<div class="service-icon bg-blue-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div>
+<div class="font-bold text-blue-800">Migration verte</div>
+<p class="text-xs text-gray-600">Sélection de data centers à énergie renouvelable</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="service-item">
+<div class="service-icon bg-blue-500">
+<i class="fas fa-cogs"></i>
+</div>
+<div>
+<div class="font-bold text-blue-800">Optimisation technique</div>
+<p class="text-xs text-gray-600">Réduction des volumes et des coûts associés</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Empreinte Carbone du Stockage Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), 
+                        radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), 
+                        linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 12px 24px rgba(59, 130, 246, 0.3);
+            margin-right: 1.5rem;
+        }
+        
+        .concept-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+            height: 100%;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
+            border: 2px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+        
+        .flow-element {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .flow-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            color: white;
+            font-size: 1.25rem;
+        }
+        
+        .flow-arrow {
+            font-size: 1.5rem;
+            color: #6b7280;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+        
+        .emphasis-text {
+            background: linear-gradient(120deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #065f46;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container flex flex-col px-16 py-12 relative">
+        <!-- Decorative elements -->
+        <div class="decorative-element top-20 right-24">
+            <i class="fas fa-cloud text-9xl text-blue-400"></i>
+        </div>
+        <div class="decorative-element bottom-24 left-20">
+            <i class="fas fa-globe text-8xl text-green-400"></i>
+        </div>
+        
+        <!-- Systnaps branding -->
+        <div class="systnaps-branding">
+            <span class="systnaps-accent">Systnaps</span>
+        </div>
+        
+        <!-- Header -->
+        <div class="section-header animate-slide-up">
+            <div class="icon-header">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <h1 class="text-4xl title-gradient">
+                <span class="emoji-accent">📋</span>Introduction
+            </h1>
+        </div>
+        
+        <!-- Main content grid -->
+        <div class="grid grid-cols-2 gap-8 flex-1">
+            <!-- Left column - Definition -->
+            <div class="animate-slide-left animate-delay-300">
+                <div class="concept-card">
+                    <div class="flex items-center mb-4">
+                        <div class="info-icon bg-gradient-to-r from-blue-500 to-blue-600">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">
+                            <span class="emoji-accent">🌱</span>Qu'est-ce que l'empreinte carbone ?
+                        </h2>
+                    </div>
+                    
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        L'<span class="emphasis-text">empreinte carbone</span> représente les émissions de gaz à effet de serre (GES), exprimées en :
+                    </p>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="info-item">
+                            <div class="info-icon bg-green-500">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                            <span><strong>Kilogrammes (kg)</strong> de CO₂ équivalent</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon bg-blue-500">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <span><strong>Tonnes (t)</strong> de CO₂ équivalent</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-lightbulb text-blue-600 mr-2"></i>
+                            <span class="font-semibold text-blue-800">Objectif</span>
+                        </div>
+                        <p class="text-blue-700 text-sm">
+                            Évaluer l'impact environnemental des activités humaines
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right column - Data Centers Impact -->
+            <div class="animate-slide-right animate-delay-600">
+                <div class="concept-card">
+                    <div class="flex items-center mb-4">
+                        <div class="info-icon bg-gradient-to-r from-green-500 to-green-600">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-800">
+                            <span class="emoji-accent">💾</span>Impact des Data Centers
+                        </h2>
+                    </div>
+                    
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Le stockage de données dans les <span class="emphasis-text">centres de données</span> consomme une grande quantité d'électricité.
+                    </p>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-400 p-3 rounded-r-lg mb-4">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+                            <span class="text-red-800 font-semibold text-sm">Conséquence directe</span>
+                        </div>
+                        <p class="text-red-700 text-sm">
+                            Génération d'<strong>émissions de CO₂</strong> proportionnelles à la consommation électrique
+                        </p>
+                    </div>
+                    
+                    <!-- Flow diagram -->
+                    <div class="flex items-center justify-between space-x-4">
+                        <div class="flow-element">
+                            <div class="flow-icon bg-yellow-500">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700">Électricité</p>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="flow-element">
+                            <div class="flow-icon bg-blue-500">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700">Stockage</p>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="flow-element">
+                            <div class="flow-icon bg-red-500">
+                                <i class="fas fa-smog"></i>
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700">CO₂</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Objective section -->
+        <div class="mt-6 animate-slide-up animate-delay-600">
+            <div class="highlight-box">
+                <div class="flex items-center mb-3">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-target text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">
+                        <span class="emoji-accent">🎯</span>Objectif de ce document
+                    </h3>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Présenter une <strong>méthode mathématique</strong> pour estimer l'empreinte carbone liée au stockage numérique et fournir des outils de comparaison pratiques.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-book-open mr-2"></i>
+                    <span>Concepts fondamentaux</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-industry mr-2"></i>
+                    <span>Impact des data centers</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="font-bold">2 / 12</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulation Mathématique - Empreinte Carbone du Stockage Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), 
+                        radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), 
+                        linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .formula-box {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(16, 185, 129, 0.1));
+            border: 3px solid rgba(59, 130, 246, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e40af;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .formula-box:hover {
+            transform: scale(1.02);
+        }
+        
+        .parameter-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+        }
+        
+        .parameter-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .conversion-card {
+            background: rgba(248, 250, 252, 0.9);
+            border-left: 4px solid #10b981;
+            padding: 0.5rem 1rem;
+            margin: 0.4rem 0;
+            border-radius: 0 8px 8px 0;
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+        
+        .conversion-card:hover {
+            background: rgba(16, 185, 129, 0.1);
+            transform: translateX(3px);
+        }
+        
+        .factor-highlight {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .parameter-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+            color: white;
+            margin-right: 0.75rem;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container flex flex-col px-16 py-8 relative">
+        <!-- Decorative elements -->
+        <div class="decorative-element top-16 right-20">
+            <i class="fas fa-calculator text-9xl text-blue-400"></i>
+        </div>
+        <div class="decorative-element bottom-20 left-20">
+            <i class="fas fa-function text-8xl text-green-400"></i>
+        </div>
+        
+        <!-- Systnaps branding -->
+        <div class="systnaps-branding">
+            <span class="systnaps-accent">Systnaps</span>
+        </div>
+        
+        <!-- Header -->
+        <div class="section-header animate-slide-up">
+            <div class="icon-header">
+                <i class="fas fa-formula"></i>
+            </div>
+            <h1 class="text-3xl title-gradient">
+                <span class="emoji-accent">📐</span>Formulation Mathématique
+            </h1>
+        </div>
+        
+        <!-- Main content grid -->
+        <div class="grid grid-cols-2 gap-8 flex-1">
+            <!-- Left column - Formula and parameters -->
+            <div class="space-y-4">
+                <!-- Formula section -->
+                <div class="animate-slide-left animate-delay-300">
+                    <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-equals text-blue-500 mr-2"></i>
+                        Formule de Base
+                    </h2>
+                    <div class="formula-box mb-3">
+                        E = S × F
+                    </div>
+                    <p class="text-center text-gray-600 font-semibold text-sm">
+                        Empreinte carbone du stockage numérique
+                    </p>
+                </div>
+                
+                <!-- Parameters -->
+                <div class="animate-slide-left animate-delay-600">
+                    <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-cogs text-green-500 mr-2"></i>
+                        Paramètres
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="parameter-card">
+                            <div class="flex items-center">
+                                <div class="parameter-icon bg-blue-500">E</div>
+                                <div>
+                                    <p class="font-bold text-gray-800 text-sm">Empreinte carbone</p>
+                                    <p class="text-xs text-gray-600">en kg CO₂/an</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="flex items-center">
+                                <div class="parameter-icon bg-green-500">S</div>
+                                <div>
+                                    <p class="font-bold text-gray-800 text-sm">Taille du stockage</p>
+                                    <p class="text-xs text-gray-600">en gigaoctets (Go)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parameter-card">
+                            <div class="flex items-center">
+                                <div class="parameter-icon bg-purple-500">F</div>
+                                <div>
+                                    <p class="font-bold text-gray-800 text-sm">Facteur d'émission</p>
+                                    <p class="text-xs text-gray-600">en kg CO₂/Go/an</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Factor value -->
+                <div class="factor-highlight">
+                    <h4 class="font-bold text-gray-800 mb-2 text-sm">
+                        <span class="emoji-accent">💡</span>Valeur de référence :
+                    </h4>
+                    <div class="text-xl font-bold text-green-700 mb-1">
+                        F = 0,2095 kg CO₂/Go/an
+                    </div>
+                    <p class="text-xs text-gray-600">
+                        Source : Green Cloud Computing, 2021
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Right column - Unit conversions -->
+            <div class="animate-slide-right animate-delay-300">
+                <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                    <i class="fas fa-exchange-alt text-green-500 mr-2"></i>
+                    <span class="emoji-accent">🔄</span>Conversions d'Unités
+                </h2>
+                
+                <div class="space-y-2 mb-4">
+                    <div class="conversion-card">
+                        <strong>1 Ko</strong> = 1 024 octets
+                    </div>
+                    <div class="conversion-card">
+                        <strong>1 Mo</strong> = 1 024 × 1 024 = 1 048 576 octets
+                    </div>
+                    <div class="conversion-card">
+                        <strong>1 Go</strong> = 1 024³ = 1 073 741 824 octets
+                    </div>
+                </div>
+                
+                <!-- Conversion formula -->
+                <div class="mb-4">
+                    <h4 class="font-bold text-gray-800 mb-2 text-sm flex items-center">
+                        <i class="fas fa-calculator mr-2"></i>
+                        <span class="emoji-accent">🧮</span>Formule de conversion
+                    </h4>
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-center">
+                        <div class="font-mono text-lg font-bold text-gray-800">
+                            S<sub>Go</sub> = S<sub>octets</sub> / 1 073 741 824
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interpretation box -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                    <h4 class="font-bold text-blue-800 mb-2 text-sm flex items-center">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <span class="emoji-accent">🔍</span>Interprétation
+                    </h4>
+                    <p class="text-blue-700 text-sm leading-relaxed">
+                        Le facteur F = 0,2095 signifie que <strong>chaque gigaoctet stocké pendant un an</strong> génère en moyenne <strong>0,2095 kg de CO₂</strong>.
+                    </p>
+                    <div class="mt-2 p-2 bg-blue-100 rounded-lg">
+                        <p class="text-xs text-blue-800 font-semibold">
+                            <span class="emoji-accent">⚡</span>
+                            Impact des serveurs, climatisation et infrastructure réseau
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-formula mr-2"></i>
+                    <span>Modèle E = S × F</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-exchange-alt mr-2"></i>
+                    <span>Conversions d'unités</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="font-bold">3 / 12</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Numérique - Empreinte Carbone du Stockage Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .calculation-box {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(59, 130, 246, 0.2);
+            border-radius: 16px;
+            padding: 1.25rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #10b981;
+        }
+        
+        .formula-step {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(16, 185, 129, 0.1));
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            color: #1e40af;
+        }
+        
+        .result-highlight {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 3px solid rgba(16, 185, 129, 0.4);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+            animation: pulse-glow 2s infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.6); }
+        }
+        
+        .verification-box {
+            background: rgba(248, 250, 252, 0.9);
+            border-left: 6px solid #10b981;
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 0.75rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .step-indicator {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 0.75rem;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        
+        .metric-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container flex flex-col px-16 py-8 relative">
+        <!-- Decorative elements -->
+        <div class="decorative-element top-16 right-20">
+            <i class="fas fa-calculator text-9xl text-blue-400"></i>
+        </div>
+        <div class="decorative-element bottom-20 left-20">
+            <i class="fas fa-chart-bar text-8xl text-green-400"></i>
+        </div>
+        
+        <!-- Systnaps branding -->
+        <div class="systnaps-branding">
+            <span class="systnaps-accent">Systnaps</span>
+        </div>
+        
+        <!-- Header -->
+        <div class="section-header animate-slide-up">
+            <div class="icon-header">
+                <i class="fas fa-calculator"></i>
+            </div>
+            <h1 class="text-3xl title-gradient">
+                <span class="emoji-accent">🧮</span>Application Numérique
+            </h1>
+        </div>
+        
+        <!-- Main content grid -->
+        <div class="grid grid-cols-2 gap-8 flex-1">
+            <!-- Left column - Calculation steps -->
+            <div class="space-y-4">
+                <!-- Example setup -->
+                <div class="animate-slide-up animate-delay-300">
+                    <div class="calculation-box">
+                        <div class="flex items-center mb-3">
+                            <div class="step-indicator">1</div>
+                            <h2 class="text-lg font-bold text-gray-800">
+                                <span class="emoji-accent">📝</span>Exemple : 500 Go
+                            </h2>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-700">Volume :</span>
+                                <span class="font-bold text-blue-700">S = 500 Go</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm mt-1">
+                                <span class="text-gray-700">Facteur :</span>
+                                <span class="font-bold text-blue-700">F = 0,2095 kg CO₂/Go/an</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Calculation process -->
+                <div class="animate-slide-up animate-delay-600">
+                    <div class="calculation-box">
+                        <div class="flex items-center mb-3">
+                            <div class="step-indicator">2</div>
+                            <h2 class="text-lg font-bold text-gray-800">
+                                <span class="emoji-accent">🔢</span>Calcul
+                            </h2>
+                        </div>
+                        
+                        <div class="formula-step">
+                            E = S × F
+                        </div>
+                        
+                        <div class="formula-step">
+                            E = 500 × 0,2095
+                        </div>
+                        
+                        <div class="result-highlight">
+                            <div class="text-2xl font-bold text-green-700 mb-1">
+                                E = 104,75 kg CO₂/an
+                            </div>
+                            <p class="text-gray-600 text-sm">Empreinte carbone annuelle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Verification -->
+                <div class="verification-box">
+                    <h3 class="font-bold text-green-800 mb-2 flex items-center text-sm">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        <span class="emoji-accent">✅</span>Validation
+                    </h3>
+                    <p class="text-green-700 text-xs leading-relaxed">
+                        Résultat validé avec l'outil <strong>MyImpact</strong>, confirmant l'alignement avec les standards industriels.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Right column - Visual representation -->
+            <div class="animate-slide-up animate-delay-300">
+                <h2 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-chart-pie text-green-500 mr-2"></i>
+                    <span class="emoji-accent">📊</span>Visualisation
+                </h2>
+                
+                <!-- Chart container -->
+                <div class="chart-container mb-4">
+                    <canvas id="emissionChart"></canvas>
+                </div>
+                
+                <!-- Key metrics cards -->
+                <div class="space-y-3">
+                    <div class="metric-card border-l-blue-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-blue-600 font-semibold">DONNÉES</p>
+                                <p class="text-lg font-bold text-blue-800">500 Go</p>
+                            </div>
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-database text-white text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card border-l-green-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-green-600 font-semibold">ÉMISSIONS</p>
+                                <p class="text-lg font-bold text-green-800">104,75 kg</p>
+                            </div>
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-smog text-white text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card border-l-purple-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-purple-600 font-semibold">FACTEUR</p>
+                                <p class="text-base font-bold text-purple-800">0,2095</p>
+                            </div>
+                            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-calculator text-white text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-calculator mr-2"></i>
+                    <span>Exemple : 500 Go → 104,75 kg CO₂/an</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    <span>Validé par MyImpact</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="font-bold">4 / 12</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Chart configuration
+        const ctx = document.getElementById('emissionChart').getContext('2d');
+        
+        const chart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Émissions CO₂', 'Référence'],
+                datasets: [{
+                    data: [104.75, 395.25],
+                    backgroundColor: [
+                        '#10b981',
+                        '#e5e7eb'
+                    ],
+                    borderWidth: 0,
+                    cutout: '60%'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 15,
+                            font: {
+                                size: 11,
+                                family: 'Inter'
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                if (context.dataIndex === 0) {
+                                    return 'Émissions: 104,75 kg CO₂/an';
+                                }
+                                return 'Données: 500 Go';
+                            }
+                        }
+                    }
+                },
+                animation: {
+                    animateRotate: true,
+                    duration: 2000
+                }
+            }
+        });
+
+        // Add center text
+        Chart.register({
+            id: 'centerText',
+            afterDatasetsDraw: function(chart) {
+                const ctx = chart.ctx;
+                const centerX = (chart.chartArea.left + chart.chartArea.right) / 2;
+                const centerY = (chart.chartArea.top + chart.chartArea.bottom) / 2;
+                
+                ctx.save();
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.font = 'bold 14px Inter';
+                ctx.fillStyle = '#10b981';
+                ctx.fillText('104,75', centerX, centerY - 8);
+                ctx.font = '11px Inter';
+                ctx.fillStyle = '#6b7280';
+                ctx.fillText('kg CO₂/an', centerX, centerY + 8);
+                ctx.restore();
+            }
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison avec les Émissions de Transport - Empreinte Carbone du Stockage Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+        }
+        
+        .comparison-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .calculation-step {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.08), rgba(16, 185, 129, 0.08));
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            color: #1e40af;
+        }
+        
+        .result-highlight {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.4);
+            border-radius: 10px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        
+        .visual-comparison {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .comparison-item {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .transport-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: white;
+            margin: 0 auto 0.5rem;
+        }
+        
+        .comparison-arrow {
+            font-size: 1.5rem;
+            color: #6b7280;
+            margin: 0 1rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container flex flex-col px-16 py-8 relative">
+        <!-- Decorative elements -->
+        <div class="decorative-element top-16 right-20">
+            <i class="fas fa-car text-9xl text-blue-400"></i>
+        </div>
+        <div class="decorative-element bottom-20 left-20">
+            <i class="fas fa-balance-scale text-8xl text-green-400"></i>
+        </div>
+        
+        <!-- Systnaps branding -->
+        <div class="systnaps-branding">
+            <span class="systnaps-accent">Systnaps</span>
+        </div>
+        
+        <!-- Header -->
+        <div class="section-header animate-slide-up">
+            <div class="icon-header">
+                <i class="fas fa-car"></i>
+            </div>
+            <h1 class="text-3xl title-gradient">
+                <span class="emoji-accent">🚗</span>Comparaison avec les Émissions de Transport
+            </h1>
+        </div>
+        
+        <!-- Main content grid -->
+        <div class="grid grid-cols-2 gap-8 flex-1">
+            <!-- Left column - Calculation method -->
+            <div class="space-y-4">
+                <!-- Reference data -->
+                <div class="animate-slide-left animate-delay-300">
+                    <div class="comparison-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-database text-blue-500 mr-2"></i>
+                            <span class="emoji-accent">📊</span>Données ADEME
+                        </h2>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                            <p class="text-gray-700 text-sm mb-2">
+                                <strong>10 km</strong> en voiture thermique = <strong>2,18 kg CO₂</strong>
+                            </p>
+                            <p class="text-gray-700 text-sm">
+                                Objectif : Distance équivalente à <strong>104,75 kg CO₂</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Calculation steps -->
+                <div class="animate-slide-left animate-delay-600">
+                    <div class="comparison-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-calculator text-green-500 mr-2"></i>
+                            <span class="emoji-accent">➗</span>Produit en Croix
+                        </h2>
+                        
+                        <div class="calculation-step">
+                            10 km → 2,18 kg CO₂
+                        </div>
+                        <div class="calculation-step">
+                            d km → 104,75 kg CO₂
+                        </div>
+                        <div class="calculation-step">
+                            d = (104,75 × 10) / 2,18
+                        </div>
+                        <div class="calculation-step">
+                            d = 1047,5 / 2,18
+                        </div>
+                        
+                        <div class="result-highlight">
+                            <div class="text-2xl font-bold text-green-700">
+                                <span class="emoji-accent">🎯</span>d ≈ 480,5 km
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right column - Visual comparison -->
+            <div class="space-y-4">
+                <!-- Visual comparison -->
+                <div class="animate-slide-right animate-delay-300">
+                    <div class="comparison-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-balance-scale text-purple-500 mr-2"></i>
+                            <span class="emoji-accent">⚖️</span>Équivalence Visuelle
+                        </h2>
+                        
+                        <div class="visual-comparison">
+                            <div class="comparison-item">
+                                <div class="transport-icon bg-blue-500">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <p class="font-bold text-blue-700">500 Go</p>
+                                <p class="text-xs text-gray-600">stockés/an</p>
+                            </div>
+                            
+                            <div class="comparison-arrow">
+                                <i class="fas fa-equals"></i>
+                            </div>
+                            
+                            <div class="comparison-item">
+                                <div class="transport-icon bg-red-500">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <p class="font-bold text-red-700">480,5 km</p>
+                                <p class="text-xs text-gray-600">en voiture</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-3">
+                            <p class="text-green-800 font-semibold text-center text-sm">
+                                <span class="emoji-accent">🌱</span>
+                                104,75 kg CO₂/an dans les deux cas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Practical example -->
+                <div class="animate-slide-right animate-delay-600">
+                    <div class="comparison-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-map-marker-alt text-indigo-500 mr-2"></i>
+                            <span class="emoji-accent">📍</span>Exemple Pratique
+                        </h2>
+                        
+                        <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-indigo-800 mb-2">
+                                    <span class="emoji-accent">🗺️</span>Distance équivalente
+                                </div>
+                                <div class="text-2xl font-bold text-indigo-700 mb-1">
+                                    Paris ↔ Lyon
+                                </div>
+                                <p class="text-indigo-600 text-sm">
+                                    Aller-retour approximatif
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mt-3">
+                            <p class="text-yellow-800 text-xs">
+                                <span class="emoji-accent">⚠️</span>
+                                Les émissions varient selon le type de véhicule et les conditions de conduite
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Conclusion section -->
+        <div class="mt-4 animate-slide-up animate-delay-600">
+            <div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-4">
+                <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-lightbulb text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800">
+                        <span class="emoji-accent">💡</span>Conclusion
+                    </h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Stocker <strong>500 Go pendant un an</strong> génère la même quantité de CO₂ qu'un trajet d'environ 
+                    <strong>480,5 km en voiture thermique</strong>.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-car mr-2"></i>
+                    <span>500 Go ≈ 480,5 km en voiture</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-calculator mr-2"></i>
+                    <span>Méthode : produit en croix</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="font-bold">5 / 12</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html data-theme="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ajustement selon l'Énergie Verte - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f0f9f5;
+    }
+    
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        margin: 0 auto;
+        background-color: #f0f9f5;
+        position: relative;
+        padding: 40px;
+    }
+    
+    .info-box {
+        background-color: #ffffff;
+        border: 2px solid #22c55e;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+    }
+    
+    .chart-container {
+        height: 200px;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .impact-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+    
+    .formula {
+        font-family: 'Cambria Math', serif;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .arrow-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 15px;
+    }
+    
+    .percentage {
+        font-weight: bold;
+        color: #718096;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .animate-fadeIn {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .systnaps-logo {
+        color: #F59E0B;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<div class="flex items-center mb-8 animate-fadeIn">
+<div class="bg-blue-500 rounded-full p-3 mr-4">
+<i class="fas fa-leaf text-white text-2xl"></i>
+</div>
+<h1 class="text-3xl font-bold text-blue-800">Ajustement selon l'Énergie Verte</h1>
+<div class="ml-auto systnaps-logo">Systnaps</div>
+</div>
+<!-- Main content - 2 column layout -->
+<div class="grid grid-cols-2 gap-6">
+<!-- Left Column: Principe d'ajustement -->
+<div class="info-box animate-fadeIn">
+<div class="flex items-center mb-3">
+<div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-2">
+<i class="fas fa-check text-white text-xs"></i>
+</div>
+<h2 class="text-lg font-bold text-green-800">Principe d'ajustement</h2>
+</div>
+<p class="text-sm mb-4">Les data centers utilisant des <strong>énergies renouvelables</strong> réduisent significativement leur empreinte carbone réelle.</p>
+<!-- Définition -->
+<div class="bg-blue-50 p-3 rounded-lg mb-4">
+<div class="flex items-center mb-2">
+<div class="w-6 h-6 bg-blue-500 rounded-md flex items-center justify-center mr-2">
+<i class="fas fa-book text-white text-xs"></i>
+</div>
+<div class="font-bold text-blue-800">Définition : "Énergie classique"</div>
+</div>
+<p class="text-xs text-gray-700">Dans notre modèle, ce terme désigne le <strong>mix énergétique standard</strong> comprenant :</p>
+<ul class="text-xs pl-5 mt-2">
+<li class="mb-1">• <strong>Énergies fossiles</strong> (charbon, gaz naturel, pétrole)</li>
+<li>• <strong>Énergie nucléaire</strong> (selon proportions du mix énergétique régional)</li>
+</ul>
+</div>
+<!-- En France -->
+<div class="mb-4 p-3 bg-gray-50 rounded-md">
+<div class="flex items-start">
+<div class="w-5 h-5 bg-gray-500 rounded-full flex items-center justify-center mr-2 text-white text-xs mt-1">i</div>
+<p class="text-xs text-gray-700">En France, l'impact initial est moins élevé grâce à la prépondérance du nucléaire dans le mix énergétique (env. 70% de la production), mais le potentiel de réduction via l'énergie renouvelable reste similaire.</p>
+</div>
+</div>
+<!-- Facteur d'ajustement -->
+<div class="mb-4">
+<div class="flex items-center">
+<div class="w-6 h-6 bg-purple-400 rounded-md flex items-center justify-center mr-2">
+<i class="fas fa-calculator text-white text-xs"></i>
+</div>
+<div class="font-bold text-purple-800">Facteur d'ajustement α : proportion d'énergie verte (0 à 1)</div>
+</div>
+<div class="formula text-center my-3 bg-gray-50 p-3 rounded-md">
+<span class="text-lg">F<sub>ajusté</sub> = F × (1 - α)</span>
+</div>
+<div class="text-sm">
+<p>À 70% : F<sub>ajusté</sub> = 0,2095 × (1 - 0,7) = 0,06285</p>
+<p>À 90% : F<sub>ajusté</sub> = 0,2095 × (1 - 0,9) = 0,02095</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Impact de l'Énergie Verte -->
+<div class="info-box animate-fadeIn">
+<div class="flex items-center mb-3">
+<div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2">
+<i class="fas fa-balance-scale text-white text-xs"></i>
+</div>
+<h2 class="text-lg font-bold text-blue-800">Impact de l'Énergie Verte</h2>
+</div>
+<!-- 3-step impact visualization -->
+<div class="flex items-center justify-between mb-6">
+<!-- Step 1: Standard Energy Mix -->
+<div class="flex flex-col items-center text-center">
+<div class="impact-icon bg-red-500">
+<i class="fas fa-industry"></i>
+</div>
+<div class="font-bold text-red-700 text-xl mt-1">104,75 kg</div>
+<p class="text-xs text-gray-600 mt-1">Mix énergétique standard<br/>(fossiles + nucléaire)</p>
+</div>
+<!-- Arrow 1 with percentage -->
+<div class="arrow-container">
+<div class="text-gray-400 text-2xl">→</div>
+<div class="percentage text-sm">-70%</div>
+</div>
+<!-- Step 2: 70% Renewable Energy -->
+<div class="flex flex-col items-center text-center">
+<div class="impact-icon bg-green-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div class="font-bold text-green-600 text-xl mt-1">31,43 kg</div>
+<p class="text-xs text-gray-600 mt-1">70% énergie<br/>renouvelable</p>
+</div>
+<!-- Arrow 2 with percentage -->
+<div class="arrow-container">
+<div class="text-gray-400 text-2xl">→</div>
+<div class="percentage text-sm">-20%</div>
+</div>
+<!-- Step 3: 90% Renewable Energy -->
+<div class="flex flex-col items-center text-center">
+<div class="impact-icon bg-green-800">
+<i class="fas fa-solar-panel"></i>
+</div>
+<div class="font-bold text-green-800 text-xl mt-1">10,48 kg</div>
+<p class="text-xs text-gray-600 mt-1">90% énergie<br/>renouvelable</p>
+</div>
+</div>
+<!-- Réduction message -->
+<div class="bg-blue-100 p-2 rounded-lg text-center mb-4">
+<p class="text-blue-800 text-sm">
+<i class="fas fa-chart-line mr-1"></i>
+Réduction de 70 à 90% des émissions CO₂
+</p>
+</div>
+<!-- Visual Comparison -->
+<div>
+<div class="flex items-center mb-2">
+<div class="w-5 h-5 bg-blue-500 rounded-md flex items-center justify-center mr-2">
+<i class="fas fa-chart-bar text-white text-xs"></i>
+</div>
+<h3 class="text-md font-bold text-blue-800">Comparaison Visuelle</h3>
+</div>
+<div class="chart-container">
+<canvas id="emissionsChart"></canvas>
+</div>
+</div>
+<!-- Footer note -->
+<div class="mt-4 bg-amber-50 p-2 rounded-lg">
+<div class="flex items-start">
+<div class="w-5 h-5 bg-amber-500 rounded-full flex items-center justify-center mr-2 text-white text-xs mt-1">!</div>
+<p class="text-xs text-amber-800">Cette fourchette de 70 à 90% dépend principalement du niveau d'énergie renouvelable dans le data center, de la performance énergétique de l'infrastructure et du mix énergétique local du fournisseur.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-4 left-0 right-0 flex justify-between px-10 text-gray-600 text-sm">
+<div class="flex items-center space-x-6">
+<div class="flex items-center">
+<i class="fas fa-leaf mr-2 text-green-500"></i>
+<span>Ajustement énergie verte : F × (1 - α)</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-chart-line mr-2 text-blue-500"></i>
+<span>Réduction de 70 à 90% possible</span>
+</div>
+</div>
+<div>6 / 12</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('emissionsChart').getContext('2d');
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Mix Énergétique Standard', '70% Énergie Renouvelable', '90% Énergie Renouvelable'],
+                datasets: [{
+                    label: 'Émissions CO₂ (kg/an)',
+                    data: [104.75, 31.43, 10.48],
+                    backgroundColor: [
+                        'rgba(220, 38, 38, 0.8)',
+                        'rgba(16, 185, 129, 0.8)',
+                        'rgba(16, 124, 80, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(220, 38, 38, 1)',
+                        'rgba(16, 185, 129, 1)',
+                        'rgba(16, 124, 80, 1)'
+                    ],
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.parsed.y + ' kg CO₂/an';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(0,0,0,0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                animation: {
+                    duration: 1500
+                }
+            }
+        });
+    });
+</script>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthodologie Data M4R® - Empreinte Carbone du Stockage Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .methodology-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 1.25rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+            height: 100%;
+        }
+        
+        .methodology-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .step-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+            margin-right: 0.75rem;
+        }
+        
+        .m4r-process {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .process-step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        
+        .process-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            color: white;
+            font-size: 1.25rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .process-arrow {
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            color: #6b7280;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: translateY(-50%) scale(1); }
+            50% { opacity: 1; transform: translateY(-50%) scale(1.1); }
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .benefit-item:last-child {
+            border-bottom: none;
+        }
+        
+        .benefit-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.75rem;
+            font-size: 0.9rem;
+            color: white;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container flex flex-col px-16 py-8 relative">
+        <!-- Decorative elements -->
+        <div class="decorative-element top-16 right-20">
+            <i class="fas fa-recycle text-9xl text-green-400"></i>
+        </div>
+        <div class="decorative-element bottom-20 left-20">
+            <i class="fas fa-cogs text-8xl text-blue-400"></i>
+        </div>
+        
+        <!-- Systnaps branding -->
+        <div class="systnaps-branding">
+            <span class="systnaps-accent">Systnaps</span>
+        </div>
+        
+        <!-- Header -->
+        <div class="section-header animate-slide-up">
+            <div class="icon-header">
+                <i class="fas fa-recycle"></i>
+            </div>
+            <h1 class="text-3xl title-gradient">
+                <span class="emoji-accent">♻️</span>Méthodologie Data M4R®
+            </h1>
+        </div>
+        
+        <!-- M4R Process Flow -->
+        <div class="animate-slide-up animate-delay-300">
+            <div class="m4r-process">
+                <div class="process-step">
+                    <div class="process-icon bg-blue-500">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-sm">Cartographier</h3>
+                    <p class="text-xs text-gray-600">Identifier les données</p>
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-icon bg-purple-500">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-sm">Réguler</h3>
+                    <p class="text-xs text-gray-600">Gouvernance</p>
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-icon bg-red-500">
+                        <i class="fas fa-compress-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-sm">Réduire</h3>
+                    <p class="text-xs text-gray-600">Optimiser</p>
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-icon bg-orange-500">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-sm">Réutiliser</h3>
+                    <p class="text-xs text-gray-600">Valoriser</p>
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-icon bg-green-500">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-sm">Recycler</h3>
+                    <p class="text-xs text-gray-600">Économie circulaire</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main content grid -->
+        <div class="grid grid-cols-2 gap-6 flex-1">
+            <!-- Left column - Application to Carbon -->
+            <div class="animate-slide-left animate-delay-600">
+                <div class="methodology-card">
+                    <div class="flex items-center mb-3">
+                        <div class="step-badge">1</div>
+                        <h2 class="text-lg font-bold text-gray-800">
+                            <span class="emoji-accent">🎯</span>Application à l'Empreinte Carbone
+                        </h2>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="benefit-item">
+                            <div class="benefit-icon bg-blue-500">
+                                <i class="fas fa-map"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">Cartographier</p>
+                                <p class="text-xs text-gray-600">Sources d'émissions CO₂</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon bg-red-500">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">Réduire</p>
+                                <p class="text-xs text-gray-600">Optimiser stockage et usage</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon bg-green-500">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">Recycler</p>
+                                <p class="text-xs text-gray-600">Économie circulaire des données</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right column - Benefits and Results -->
+            <div class="animate-slide-right animate-delay-600">
+                <div class="methodology-card">
+                    <div class="flex items-center mb-3">
+                        <div class="step-badge">2</div>
+                        <h2 class="text-lg font-bold text-gray-800">
+                            <span class="emoji-accent">📈</span>Bénéfices & Résultats
+                        </h2>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <div class="benefit-item">
+                            <div class="benefit-icon bg-purple-500">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">Mesure précise</p>
+                                <p class="text-xs text-gray-600">Quantification impact réel</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon bg-orange-500">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">Économies</p>
+                                <p class="text-xs text-gray-600">Réduction coûts énergétiques</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon bg-teal-500">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm">Conformité</p>
+                                <p class="text-xs text-gray-600">Standards environnementaux</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom highlight -->
+        <div class="mt-4 animate-slide-up animate-delay-600">
+            <div class="highlight-box">
+                <div class="flex items-center justify-center mb-3">
+                    <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-rocket text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800">
+                        <span class="emoji-accent">🚀</span>Accélérez vos projets • Valorisez vos données • Réduisez votre impact !
+                    </h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    La méthodologie <strong>Data M4R®</strong> de Systnaps appliquée à l'empreinte carbone permet une approche 
+                    structurée et efficace pour mesurer, optimiser et réduire l'impact environnemental du stockage numérique.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-recycle mr-2"></i>
+                    <span>Méthodologie Data M4R® Systnaps</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-leaf mr-2"></i>
+                    <span>Économie circulaire des données</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="font-bold">7 / 12</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recommandations et Plan d'Action - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .recommendation-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+            height: 100%;
+        }
+        
+        .recommendation-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .phase-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+            margin-right: 0.75rem;
+        }
+        
+        .action-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .action-item:last-child {
+            border-bottom: none;
+        }
+        
+        .action-icon {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.75rem;
+            font-size: 0.8rem;
+            color: white;
+        }
+        
+        .priority-high {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.15));
+            border-left-color: #ef4444;
+        }
+        
+        .priority-medium {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.15));
+            border-left-color: #f59e0b;
+        }
+        
+        .priority-low {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(22, 163, 74, 0.15));
+            border-left-color: #22c55e;
+        }
+        
+        .timeline-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(16, 185, 129, 0.05));
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+        
+        .timeline-step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        
+        .timeline-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            color: white;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .timeline-arrow {
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            color: #6b7280;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #F59E0B;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-tasks text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-route text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+            Systnaps
+        </div>
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-tasks"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">📋</span>Recommandations et Plan d'Action
+            </h1>
+</div>
+<!-- Timeline -->
+<div class="animate-slide-up animate-delay-300">
+<div class="timeline-container">
+<div class="timeline-step">
+<div class="timeline-icon bg-blue-500">
+<i class="fas fa-search"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Audit</h3>
+<div class="timeline-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="timeline-step">
+<div class="timeline-icon bg-orange-500">
+<i class="fas fa-cogs"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Optimisation</h3>
+<div class="timeline-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="timeline-step">
+<div class="timeline-icon bg-green-500">
+<i class="fas fa-leaf"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Énergie Verte</h3>
+<div class="timeline-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="timeline-step">
+<div class="timeline-icon bg-purple-500">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Monitoring</h3>
+</div>
+</div>
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-3 gap-6 flex-1">
+<!-- Phase 1 - High Priority -->
+<div class="animate-slide-left animate-delay-300">
+<div class="recommendation-card priority-high">
+<div class="flex items-center mb-3">
+<div class="phase-badge">1</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">🔥</span>Priorité Haute
+                        </h2>
+</div>
+<div class="space-y-2">
+<div class="action-item">
+<div class="action-icon bg-red-500">
+<i class="fas fa-search"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Audit complet</p>
+<p class="text-xs text-gray-600">Cartographier données</p>
+</div>
+</div>
+<div class="action-item">
+<div class="action-icon bg-orange-500">
+<i class="fas fa-calculator"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Mesure baseline</p>
+<p class="text-xs text-gray-600">Établir référentiel</p>
+</div>
+</div>
+<div class="action-item">
+<div class="action-icon bg-purple-500">
+<i class="fas fa-users"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Sensibilisation</p>
+<p class="text-xs text-gray-600">Formation équipes</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 2 - Medium Priority -->
+<div class="animate-slide-up animate-delay-600">
+<div class="recommendation-card priority-medium">
+<div class="flex items-center mb-3">
+<div class="phase-badge">2</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">⚡</span>Priorité Moyenne
+                        </h2>
+</div>
+<div class="space-y-2">
+<div class="action-item">
+<div class="action-icon bg-blue-500">
+<i class="fas fa-compress-alt"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Optimisation</p>
+<p class="text-xs text-gray-600">Réduire volumes</p>
+</div>
+</div>
+<div class="action-item">
+<div class="action-icon bg-indigo-500">
+<i class="fas fa-tools"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Outils monitoring</p>
+<p class="text-xs text-gray-600">Déployer solutions</p>
+</div>
+</div>
+<div class="action-item">
+<div class="action-icon bg-teal-500">
+<i class="fas fa-sync-alt"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Automatisation</p>
+<p class="text-xs text-gray-600">Processus efficaces</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Phase 3 - Low Priority -->
+<div class="animate-slide-right animate-delay-600">
+<div class="recommendation-card priority-low">
+<div class="flex items-center mb-3">
+<div class="phase-badge">3</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">🌱</span>Priorité Faible
+                        </h2>
+</div>
+<div class="space-y-2">
+<div class="action-item">
+<div class="action-icon bg-green-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Énergie verte</p>
+<p class="text-xs text-gray-600">Migration 70 à 90%</p>
+</div>
+</div>
+<div class="action-item">
+<div class="action-icon bg-cyan-500">
+<i class="fas fa-award"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Certification</p>
+<p class="text-xs text-gray-600">Labels environnementaux</p>
+</div>
+</div>
+<div class="action-item">
+<div class="action-icon bg-pink-500">
+<i class="fas fa-share-alt"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Communication</p>
+<p class="text-xs text-gray-600">Reporting externe</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom call to action -->
+<div class="mt-4 animate-slide-up animate-delay-600">
+<div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-4">
+<i class="fas fa-rocket text-white"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">🚀</span>Prêt à démarrer ?
+                            </h3>
+<p class="text-gray-700 text-sm">
+                                Systnaps vous accompagne dans votre démarche d'éco-gouvernance
+                            </p>
+</div>
+</div>
+<div class="text-right">
+<div class="text-2xl font-bold text-green-700">70 à 90%</div>
+<p class="text-xs text-gray-600">Réduction CO₂ possible</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div></div>
+<div class="flex items-center">
+<span class="font-bold">8 / 12</span>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources et Références - Empreinte Carbone du Stockage Numérique</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .source-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+            height: 100%;
+        }
+        
+        .source-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .source-item {
+            background: rgba(248, 250, 252, 0.9);
+            border-left: 4px solid #10b981;
+            padding: 1rem 1.25rem;
+            margin: 0.75rem 0;
+            border-radius: 0 12px 12px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .source-item:hover {
+            background: rgba(16, 185, 129, 0.1);
+            transform: translateX(3px);
+        }
+        
+        .validation-highlight {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .source-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1rem;
+            color: white;
+        }
+        
+        .key-stat {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container flex flex-col px-16 py-8 relative">
+        <!-- Decorative elements -->
+        <div class="decorative-element top-16 right-20">
+            <i class="fas fa-book text-9xl text-blue-400"></i>
+        </div>
+        <div class="decorative-element bottom-20 left-20">
+            <i class="fas fa-link text-8xl text-green-400"></i>
+        </div>
+        
+        <!-- Systnaps branding -->
+        <div class="systnaps-branding">
+            <span class="systnaps-accent">Systnaps</span>
+        </div>
+        
+        <!-- Header -->
+        <div class="section-header animate-slide-up">
+            <div class="icon-header">
+                <i class="fas fa-book"></i>
+            </div>
+            <h1 class="text-3xl title-gradient">
+                <span class="emoji-accent">📚</span>Sources et Références
+            </h1>
+        </div>
+        
+        <!-- Main content grid -->
+        <div class="grid grid-cols-2 gap-8 flex-1">
+            <!-- Left column - Primary Sources -->
+            <div class="space-y-4">
+                <!-- Research Sources -->
+                <div class="animate-slide-left animate-delay-300">
+                    <div class="source-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-microscope text-green-500 mr-2"></i>
+                            <span class="emoji-accent">🔬</span>Sources de Recherche
+                        </h2>
+                        
+                        <div class="space-y-3">
+                            <div class="source-item">
+                                <div class="flex items-start">
+                                    <div class="source-icon bg-green-500">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">Green Cloud Computing Study</p>
+                                        <p class="text-xs text-gray-600 mb-1">Analyse des émissions des data centers (2021)</p>
+                                        <p class="text-xs text-blue-600">Facteur d'émission : 0,2095 kg CO₂/Go/an</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="source-item">
+                                <div class="flex items-start">
+                                    <div class="source-icon bg-blue-500">
+                                        <i class="fas fa-car"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">ADEME</p>
+                                        <p class="text-xs text-gray-600 mb-1">Facteurs d'émission des transports</p>
+                                        <p class="text-xs text-blue-600">agirpourlatransition.ademe.fr</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="source-item">
+                                <div class="flex items-start">
+                                    <div class="source-icon bg-purple-500">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">GHG Protocol</p>
+                                        <p class="text-xs text-gray-600 mb-1">Standards pour l'ajustement énergétique</p>
+                                        <p class="text-xs text-blue-600">Scope 2 - Énergie indirecte</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Key Statistics -->
+                <div class="animate-slide-left animate-delay-600">
+                    <div class="source-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-chart-bar text-indigo-500 mr-2"></i>
+                            <span class="emoji-accent">📊</span>Données Clés
+                        </h2>
+                        
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="key-stat border-l-blue-500">
+                                <div class="text-xl font-bold text-blue-700">0,2095</div>
+                                <p class="text-xs text-gray-600">kg CO₂/Go/an</p>
+                            </div>
+                            
+                            <div class="key-stat border-l-red-500">
+                                <div class="text-xl font-bold text-red-700">480,5 km</div>
+                                <p class="text-xs text-gray-600">Équivalent voiture</p>
+                            </div>
+                            
+                            <div class="key-stat border-l-green-500">
+                                <div class="text-xl font-bold text-green-700">70%</div>
+                                <p class="text-xs text-gray-600">Réduction possible</p>
+                            </div>
+                            
+                            <div class="key-stat border-l-purple-500">
+                                <div class="text-xl font-bold text-purple-700">2,18</div>
+                                <p class="text-xs text-gray-600">kg CO₂/10km</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right column - Validation and Tools -->
+            <div class="space-y-4">
+                <!-- Validation Tools -->
+                <div class="animate-slide-right animate-delay-300">
+                    <div class="source-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-check-double text-teal-500 mr-2"></i>
+                            <span class="emoji-accent">✅</span>Outils de Validation
+                        </h2>
+                        
+                        <div class="space-y-3">
+                            <div class="source-item">
+                                <div class="flex items-start">
+                                    <div class="source-icon bg-teal-500">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">MyImpact Tool</p>
+                                        <p class="text-xs text-gray-600 mb-1">Validation des calculs d'empreinte carbone</p>
+                                        <p class="text-xs text-blue-600">myimpact.isit-europe.org</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="source-item">
+                                <div class="flex items-start">
+                                    <div class="source-icon bg-orange-500">
+                                        <i class="fas fa-recycle"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm">Systnaps Data M4R®</p>
+                                        <p class="text-xs text-gray-600 mb-1">Méthodologie d'éco-gouvernance</p>
+                                        <p class="text-xs text-blue-600">Économie circulaire des données</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Methodology Validation -->
+                <div class="animate-slide-right animate-delay-600">
+                    <div class="validation-highlight">
+                        <div class="flex items-center justify-center mb-3">
+                            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-shield-alt text-white"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800">
+                                <span class="emoji-accent">🛡️</span>Validation Méthodologique
+                            </h3>
+                        </div>
+                        
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                                <p class="text-blue-800 leading-relaxed">
+                                    <span class="emoji-accent">✓</span>
+                                    Alignement avec les <strong>standards industriels</strong> via MyImpact
+                                </p>
+                            </div>
+                            
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-3">
+                                <p class="text-green-800 leading-relaxed">
+                                    <span class="emoji-accent">✓</span>
+                                    Conformité aux recommandations du <strong>GHG Protocol</strong>
+                                </p>
+                            </div>
+                            
+                            <div class="bg-purple-50 border border-purple-200 rounded-lg p-3">
+                                <p class="text-purple-800 leading-relaxed">
+                                    <span class="emoji-accent">✓</span>
+                                    Méthode <strong>Data M4R®</strong> certifiée Systnaps
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Resources -->
+                <div class="animate-slide-right animate-delay-600">
+                    <div class="source-card">
+                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-external-link-alt text-cyan-500 mr-2"></i>
+                            <span class="emoji-accent">🔗</span>Ressources Complémentaires
+                        </h2>
+                        
+                        <div class="space-y-2">
+                            <div class="bg-gray-50 rounded-lg p-2">
+                                <p class="text-xs text-gray-700">
+                                    <span class="emoji-accent">📖</span>
+                                    <strong>ISO 14064</strong> - Standards de quantification GES
+                                </p>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-lg p-2">
+                                <p class="text-xs text-gray-700">
+                                    <span class="emoji-accent">🌍</span>
+                                    <strong>Carbon Trust</strong> - Méthodologies mesure carbone
+                                </p>
+                            </div>
+                            
+                            <div class="bg-gray-50 rounded-lg p-2">
+                                <p class="text-xs text-gray-700">
+                                    <span class="emoji-accent">🏭</span>
+                                    <strong>IEA</strong> - Données énergétiques sectorielles
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <i class="fas fa-book mr-2"></i>
+                    <span>Sources validées et référencées</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    <span>Méthodologie certifiée</span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <span class="font-bold">9 / 12</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Synthèse et Bénéfices - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .icon-header {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 16px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            margin-right: 1rem;
+        }
+        
+        .summary-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+        }
+        
+        .summary-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .key-metric {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
+            border: 2px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.75rem 0;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            animation: gentle-pulse 4s infinite ease-in-out;
+        }
+        
+        @keyframes gentle-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(16, 185, 129, 0.5);
+            }
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .benefit-item:last-child {
+            border-bottom: none;
+        }
+        
+        .benefit-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 1s ease-out;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-900 {
+            animation-delay: 0.9s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-lightbulb text-9xl text-green-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-trophy text-8xl text-blue-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span class="systnaps-accent">Systnaps</span>
+</div>
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-lightbulb"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">💡</span>Synthèse et Bénéfices
+            </h1>
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-8 flex-1">
+<!-- Left column - Key findings -->
+<div class="space-y-4">
+<!-- Key findings -->
+<div class="animate-slide-up animate-delay-300">
+<div class="summary-card">
+<h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fas fa-key text-blue-500 mr-3"></i>
+<span class="emoji-accent">🔑</span>Points Clés
+                        </h2>
+<div class="key-metric">
+<div class="text-2xl font-bold text-blue-700 mb-1">
+<span class="emoji-accent">📐</span>E = S × F
+                            </div>
+<div class="text-sm text-gray-600">Modèle mathématique fiable</div>
+</div>
+<div class="space-y-3">
+<div class="benefit-item">
+<div class="benefit-icon bg-blue-500">
+<i class="fas fa-database"></i>
+</div>
+<div>
+<p class="font-bold text-blue-700">500 Go → 104,75 kg CO₂/an</p>
+<p class="text-xs text-gray-600">Calcul précis et validé</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-red-500">
+<i class="fas fa-car"></i>
+</div>
+<div>
+<p class="font-bold text-red-700">Équivalent 480,5 km voiture</p>
+<p class="text-xs text-gray-600">Comparaison concrète</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Applications -->
+<div class="animate-slide-up animate-delay-600">
+<div class="summary-card">
+<h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fas fa-rocket text-orange-500 mr-3"></i>
+<span class="emoji-accent">🚀</span>Applications Pratiques
+                        </h2>
+<div class="space-y-3">
+<div class="benefit-item">
+<div class="benefit-icon bg-green-500">
+<i class="fas fa-chart-line"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Évaluation d'impact</p>
+<p class="text-xs text-gray-600">Data centers et infrastructure</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-purple-500">
+<i class="fas fa-cogs"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Optimisation énergétique</p>
+<p class="text-xs text-gray-600">Réduction coûts et émissions</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-teal-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Aide à la décision durable</p>
+<p class="text-xs text-gray-600">Stratégies environnementales</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right column - Benefits and Results -->
+<div class="space-y-4">
+<!-- Benefits -->
+<div class="animate-slide-up animate-delay-300">
+<div class="summary-card">
+<h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fas fa-trophy text-yellow-500 mr-3"></i>
+<span class="emoji-accent">🏆</span>Bénéfices Obtenus
+                        </h2>
+<div class="space-y-3">
+<div class="benefit-item">
+<div class="benefit-icon bg-blue-500">
+<i class="fas fa-shield-alt"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Méthode validée</p>
+<p class="text-xs text-gray-600">Alignée standards industriels</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-green-500">
+<i class="fas fa-recycle"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Méthodologie Data M4R®</p>
+<p class="text-xs text-gray-600">Économie circulaire des données</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-orange-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Réduction jusqu'à 70 à 90%</p>
+<p class="text-xs text-gray-600">Avec énergie renouvelable</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ROI and Impact -->
+<div class="animate-slide-up animate-delay-600">
+<div class="summary-card">
+<h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fas fa-chart-pie text-indigo-500 mr-3"></i>
+<span class="emoji-accent">📊</span>Impact Mesurable
+                        </h2>
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-3 text-center">
+<div class="text-2xl font-bold text-blue-700">100%</div>
+<p class="text-xs text-gray-600">Traçabilité</p>
+</div>
+<div class="bg-green-50 border border-green-200 rounded-lg p-3 text-center">
+<div class="text-2xl font-bold text-green-700">70 à 90%</div>
+<p class="text-xs text-gray-600">Réduction possible</p>
+</div>
+<div class="bg-orange-50 border border-orange-200 rounded-lg p-3 text-center">
+<div class="text-2xl font-bold text-orange-700">ROI</div>
+<p class="text-xs text-gray-600">Positif</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Final call to action -->
+<div class="mt-4 animate-fade-in animate-delay-900">
+<div class="final-cta">
+<div class="flex items-center justify-center mb-4">
+<div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-4">
+<i class="fas fa-handshake text-white text-xl"></i>
+</div>
+<h2 class="text-2xl font-bold text-gray-800">
+<span class="emoji-accent">🤝</span>Votre Partenaire pour l'Éco-Gouvernance
+                    </h2>
+</div>
+<p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Systnaps vous accompagne dans la mise en œuvre de solutions concrètes pour <strong>mesurer, optimiser et réduire</strong> l'empreinte carbone de vos données.
+                </p>
+<div class="flex items-center justify-center space-x-6 text-sm text-gray-600">
+<div class="flex items-center">
+<i class="fas fa-award mr-2 text-yellow-500"></i>
+<span>Certifié &amp; Validé</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-clock mr-2 text-blue-500"></i>
+<span>Résultats rapides</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-leaf mr-2 text-green-500"></i>
+<span>Impact durable</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="fas fa-lightbulb mr-2"></i>
+<span>Synthèse des bénéfices</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-handshake mr-2"></i>
+<span>Partenariat durable</span>
+</div>
+</div>
+<div class="flex items-center">
+<span class="font-bold">10 / 12</span>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .hero-icon {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+            }
+            50% { 
+                transform: scale(1.05);
+                box-shadow: 0 20px 45px rgba(59, 130, 246, 0.4);
+            }
+        }
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+            text-align: center;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .contact-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            animation: gentle-pulse 4s infinite ease-in-out;
+        }
+        
+        @keyframes gentle-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(16, 185, 129, 0.5);
+            }
+        }
+        
+        .service-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            margin: 0.5rem 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 1s ease-out;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-900 {
+            animation-delay: 0.9s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.25em;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container flex flex-col justify-center items-center px-16 py-12 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-handshake text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-phone text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span class="systnaps-accent">Systnaps</span>
+</div>
+<!-- Hero section -->
+<div class="text-center max-w-5xl animate-slide-up mb-8">
+<!-- Main icon -->
+<div class="flex justify-center mb-6">
+<div class="hero-icon">
+<i class="fas fa-handshake"></i>
+</div>
+</div>
+<h1 class="text-5xl title-gradient leading-tight mb-6">
+<span class="emoji-accent">🤝</span>Nous contacter
+            </h1>
+<p class="text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+<span class="emoji-accent">🚀</span>
+                Innovante • Souveraine • GreenTech
+            </p>
+</div>
+<!-- Contact cards -->
+<div class="animate-slide-up animate-delay-300 w-full max-w-6xl mb-8">
+<div class="grid grid-cols-2 gap-8 justify-center">
+<div class="contact-card mx-auto" style="width: 100%; max-width: 300px;">
+<div class="contact-avatar bg-gradient-to-r from-blue-500 to-blue-600">
+<i class="fas fa-user-tie"></i>
+</div>
+<div class="text-xl font-bold text-gray-800 mb-2">
+<span class="emoji-accent">👩‍💼</span>Jawaher ALLALA
+                    </div>
+<p class="text-sm text-gray-600 mb-2">CEO Systnaps</p>
+<p class="text-blue-600 font-semibold">jallala@systnaps.com</p>
+</div>
+<div class="contact-card mx-auto" style="width: 100%; max-width: 300px;">
+<div class="contact-avatar bg-gradient-to-r from-purple-500 to-purple-600">
+<i class="fas fa-cogs"></i>
+</div>
+<div class="text-xl font-bold text-gray-800 mb-2">
+<span class="emoji-accent">⚙️</span>Nicolas PRÉVOST
+                    </div>
+<p class="text-sm text-gray-600 mb-2">Directeur des opérations</p>
+<p class="text-purple-600 font-semibold">nprevost@systnaps.com</p>
+</div>
+</div>
+</div>
+<!-- Services section -->
+<div class="animate-fade-in animate-delay-600 w-full max-w-5xl mb-8">
+<div class="grid grid-cols-2 gap-8">
+<!-- Left column - Services -->
+<div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+<span class="emoji-accent">🎯</span>Nos Services
+                    </h3>
+<div class="space-y-3">
+<div class="service-item">
+<div class="service-icon bg-blue-500">
+<i class="fas fa-search"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Audit &amp; Diagnostic</p>
+<p class="text-xs text-gray-600">Évaluation empreinte carbone</p>
+</div>
+</div>
+<div class="service-item">
+<div class="service-icon bg-green-500">
+<i class="fas fa-recycle"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Data M4R®</p>
+<p class="text-xs text-gray-600">Économie circulaire des données</p>
+</div>
+</div>
+<div class="service-item">
+<div class="service-icon bg-purple-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800">Éco-gouvernance</p>
+<p class="text-xs text-gray-600">Solutions durables</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right column - Contact info -->
+<div>
+<h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+<span class="emoji-accent">📞</span>Coordonnées
+                    </h3>
+<div class="space-y-4">
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<i class="fas fa-phone text-blue-600 mr-3"></i>
+<span class="font-bold text-blue-800">01 48 72 07 11</span>
+</div>
+<p class="text-blue-700 text-sm">Ligne directe</p>
+</div>
+<div class="bg-green-50 border border-green-200 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<i class="fas fa-globe text-green-600 mr-3"></i>
+<span class="font-bold text-green-800">www.systnaps.com</span>
+</div>
+<p class="text-green-700 text-sm">Site web officiel</p>
+</div>
+<div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+<div class="flex items-center mb-2">
+<i class="fab fa-linkedin text-purple-600 mr-3"></i>
+<span class="font-bold text-purple-800">Systnaps</span>
+</div>
+<p class="text-purple-700 text-sm">Suivez-nous sur LinkedIn</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Final call to action -->
+<div class="animate-fade-in animate-delay-900 w-full max-w-5xl">
+<div class="final-cta">
+<div class="flex items-center justify-center mb-4">
+<div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-4">
+<i class="fas fa-rocket text-white text-xl"></i>
+</div>
+<h2 class="text-3xl font-bold text-gray-800">
+<span class="emoji-accent">🚀</span>Prêt à réduire votre empreinte carbone ?
+                    </h2>
+</div>
+<p class="text-xl text-gray-700 leading-relaxed mb-6">
+                    Contactez-nous dès aujourd'hui pour une <strong>consultation gratuite</strong> et découvrez comment optimiser l'impact environnemental de vos données.
+                </p>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="fas fa-handshake mr-2"></i>
+<span>Votre partenaire en éco-gouvernance</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-phone mr-2"></i>
+<span>01 48 72 07 11</span>
+</div>
+</div>
+<div class="flex items-center">
+<span class="font-bold">11 / 12</span>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Merci - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(37, 99, 235, 0.08) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-gradient {
+            background: linear-gradient(135deg, #1e40af, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .systnaps-accent {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .hero-icon {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+            }
+            50% { 
+                transform: scale(1.08);
+                box-shadow: 0 25px 50px rgba(59, 130, 246, 0.4);
+            }
+        }
+        
+        .final-message {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(59, 130, 246, 0.15));
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            animation: gentle-pulse 4s infinite ease-in-out;
+        }
+        
+        @keyframes gentle-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(16, 185, 129, 0.5);
+            }
+        }
+        
+        .thank-you-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .animate-slide-up {
+            animation: slideInUp 1.2s ease-out;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            animation-fill-mode: both;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
+        
+        .decorative-element {
+            position: absolute;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        
+        .systnaps-branding {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-weight: 700;
+            color: #374151;
+            font-size: 1.125rem;
+        }
+        
+        .emoji-accent {
+            font-size: 1.4em;
+            margin-right: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container flex flex-col justify-center items-center px-16 py-12 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20 thank-you-animation">
+<i class="fas fa-heart text-9xl text-red-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20 thank-you-animation" style="animation-delay: 2s;">
+<i class="fas fa-thumbs-up text-8xl text-green-400"></i>
+</div>
+<div class="decorative-element top-1/2 right-32 transform -translate-y-1/2 thank-you-animation" style="animation-delay: 4s;">
+<i class="fas fa-star text-7xl text-yellow-300"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span class="systnaps-accent">Systnaps</span>
+</div>
+<!-- Hero section -->
+<div class="text-center max-w-6xl animate-slide-up">
+<!-- Main icon -->
+<div class="flex justify-center mb-8">
+<div class="hero-icon">
+<i class="fas fa-heart"></i>
+</div>
+</div>
+<h1 class="text-6xl title-gradient leading-tight mb-6">
+<span class="emoji-accent">🙏</span>Merci de votre attention !
+            </h1>
+<p class="text-3xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+<span class="emoji-accent">🌱</span>
+                Ensemble, construisons un avenir numérique plus responsable
+            </p>
+</div>
+<!-- Final message -->
+<div class="animate-fade-in animate-delay-600 w-full max-w-6xl">
+<div class="final-message">
+<div class="flex items-center justify-center mb-6">
+<div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-6">
+<i class="fas fa-handshake text-white text-2xl"></i>
+</div>
+<h2 class="text-4xl font-bold text-gray-800">
+<span class="emoji-accent">🤝</span>Votre partenaire en éco-gouvernance
+                    </h2>
+</div>
+<p class="text-2xl text-gray-700 leading-relaxed mb-8">
+                    La méthodologie <strong>Data M4R®</strong> de Systnaps vous accompagne dans la mesure, l'optimisation et la réduction de l'empreinte carbone de vos données numériques.
+                </p>
+<div class="grid grid-cols-2 gap-8 mb-8">
+<!-- Contact info -->
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+<h3 class="text-xl font-bold text-blue-800 mb-4">
+<span class="emoji-accent">📞</span>Contactez-nous
+                        </h3>
+<div class="space-y-2">
+<p class="text-blue-700 font-semibold">📧 contact@systnaps.com</p>
+<p class="text-blue-700 font-semibold">📱 01 48 72 07 11</p>
+<p class="text-blue-700 font-semibold">🌐 www.systnaps.com</p>
+</div>
+</div>
+<!-- Our promise -->
+<div class="bg-green-50 border border-green-200 rounded-xl p-6">
+<h3 class="text-xl font-bold text-green-800 mb-4">
+<span class="emoji-accent">🎯</span>Notre engagement
+                        </h3>
+<div class="space-y-2">
+<p class="text-green-700 font-semibold">✅ Solutions éprouvées</p>
+<p class="text-green-700 font-semibold">✅ Résultats mesurables</p>
+<p class="text-green-700 font-semibold">✅ Impact durable</p>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-2xl p-4">
+<p class="text-2xl text-gray-700 font-bold">
+<span class="emoji-accent">🚀</span>
+                        Accélérez vos projets • Valorisez vos données • Réduisez votre impact !
+                    </p>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 right-16 flex justify-end items-center text-gray-500">
+<div class="flex items-center text-base">
+<span class="font-bold">12 / 12</span>
+</div>
+</div>
+</div>
+</body>
+</html>
