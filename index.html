@@ -85,10 +85,31 @@
             margin-right: 15px;
             color: white;
         }
+        
+        .systnaps-logo {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #F59E0B;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
 <div class="slide-container">
+<!-- Systnaps Logo in top right corner -->
+<div class="systnaps-logo">Systnaps</div>
 <!-- Main Title -->
 <h1 class="title text-4xl mb-8">Modélisation de l'Empreinte Carbone du Stockage Numérique</h1>
 <!-- Info Box -->
@@ -130,7 +151,7 @@
 <i class="fas fa-leaf"></i>
 </div>
 <h3 class="text-xl font-bold text-blue-800">Service d'optimisation</h3>
-<p class="text-sm text-gray-600">Réduction de 70 à 90% possible</p>
+<p class="text-sm text-gray-600">Réduction significative possible</p>
 </div>
 </div>
 <!-- Footer Card: Services -->
@@ -175,19 +196,22 @@
 </div>
 </div>
 </div>
+<!-- Slide Number -->
+<div class="slide-number">1</div>
 </div>
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="fr">
+
+<html data-theme="light" lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction - Empreinte Carbone du Stockage Numérique</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Introduction - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
@@ -399,185 +423,173 @@
             font-weight: 600;
             color: #065f46;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="slide-container flex flex-col px-16 py-12 relative">
-        <!-- Decorative elements -->
-        <div class="decorative-element top-20 right-24">
-            <i class="fas fa-cloud text-9xl text-blue-400"></i>
-        </div>
-        <div class="decorative-element bottom-24 left-20">
-            <i class="fas fa-globe text-8xl text-green-400"></i>
-        </div>
-        
-        <!-- Systnaps branding -->
-        <div class="systnaps-branding">
-            <span class="systnaps-accent">Systnaps</span>
-        </div>
-        
-        <!-- Header -->
-        <div class="section-header animate-slide-up">
-            <div class="icon-header">
-                <i class="fas fa-info-circle"></i>
-            </div>
-            <h1 class="text-4xl title-gradient">
-                <span class="emoji-accent">📋</span>Introduction
+<div class="slide-container flex flex-col px-16 py-12 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-20 right-24">
+<i class="fas fa-cloud text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-24 left-20">
+<i class="fas fa-globe text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span class="systnaps-accent">Systnaps</span>
+</div>
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-info-circle"></i>
+</div>
+<h1 class="text-4xl title-gradient">
+<span class="emoji-accent">📋</span>Introduction
             </h1>
-        </div>
-        
-        <!-- Main content grid -->
-        <div class="grid grid-cols-2 gap-8 flex-1">
-            <!-- Left column - Definition -->
-            <div class="animate-slide-left animate-delay-300">
-                <div class="concept-card">
-                    <div class="flex items-center mb-4">
-                        <div class="info-icon bg-gradient-to-r from-blue-500 to-blue-600">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800">
-                            <span class="emoji-accent">🌱</span>Qu'est-ce que l'empreinte carbone ?
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-8 flex-1">
+<!-- Left column - Definition -->
+<div class="animate-slide-left animate-delay-300">
+<div class="concept-card">
+<div class="flex items-center mb-4">
+<div class="info-icon bg-gradient-to-r from-blue-500 to-blue-600">
+<i class="fas fa-leaf"></i>
+</div>
+<h2 class="text-xl font-bold text-gray-800">
+<span class="emoji-accent">🌱</span>Qu'est-ce que l'empreinte carbone ?
                         </h2>
-                    </div>
-                    
-                    <p class="text-gray-700 leading-relaxed mb-4">
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">
                         L'<span class="emphasis-text">empreinte carbone</span> représente les émissions de gaz à effet de serre (GES), exprimées en :
                     </p>
-                    
-                    <div class="space-y-2 mb-4">
-                        <div class="info-item">
-                            <div class="info-icon bg-green-500">
-                                <i class="fas fa-weight-hanging"></i>
-                            </div>
-                            <span><strong>Kilogrammes (kg)</strong> de CO₂ équivalent</span>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon bg-blue-500">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <span><strong>Tonnes (t)</strong> de CO₂ équivalent</span>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-lightbulb text-blue-600 mr-2"></i>
-                            <span class="font-semibold text-blue-800">Objectif</span>
-                        </div>
-                        <p class="text-blue-700 text-sm">
+<div class="space-y-2 mb-4">
+<div class="info-item">
+<div class="info-icon bg-green-500">
+<i class="fas fa-weight-hanging"></i>
+</div>
+<span><strong>Kilogrammes (kg)</strong> de CO₂ équivalent</span>
+</div>
+<div class="info-item">
+<div class="info-icon bg-blue-500">
+<i class="fas fa-balance-scale"></i>
+</div>
+<span><strong>Tonnes (t)</strong> de CO₂ équivalent</span>
+</div>
+</div>
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+<div class="flex items-center mb-2">
+<i class="fas fa-lightbulb text-blue-600 mr-2"></i>
+<span class="font-semibold text-blue-800">Objectif</span>
+</div>
+<p class="text-blue-700 text-sm">
                             Évaluer l'impact environnemental des activités humaines
                         </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right column - Data Centers Impact -->
-            <div class="animate-slide-right animate-delay-600">
-                <div class="concept-card">
-                    <div class="flex items-center mb-4">
-                        <div class="info-icon bg-gradient-to-r from-green-500 to-green-600">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800">
-                            <span class="emoji-accent">💾</span>Impact des Data Centers
+</div>
+</div>
+</div>
+<!-- Right column - Data Centers Impact -->
+<div class="animate-slide-right animate-delay-600">
+<div class="concept-card">
+<div class="flex items-center mb-4">
+<div class="info-icon bg-gradient-to-r from-green-500 to-green-600">
+<i class="fas fa-server"></i>
+</div>
+<h2 class="text-xl font-bold text-gray-800">
+<span class="emoji-accent">💾</span>Impact des Data Centers
                         </h2>
-                    </div>
-                    
-                    <p class="text-gray-700 leading-relaxed mb-4">
+</div>
+<p class="text-gray-700 leading-relaxed mb-4">
                         Le stockage de données dans les <span class="emphasis-text">centres de données</span> consomme une grande quantité d'électricité.
                     </p>
-                    
-                    <div class="bg-red-50 border-l-4 border-red-400 p-3 rounded-r-lg mb-4">
-                        <div class="flex items-center mb-2">
-                            <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
-                            <span class="text-red-800 font-semibold text-sm">Conséquence directe</span>
-                        </div>
-                        <p class="text-red-700 text-sm">
+<div class="bg-red-50 border-l-4 border-red-400 p-3 rounded-r-lg mb-4">
+<div class="flex items-center mb-2">
+<i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+<span class="text-red-800 font-semibold text-sm">Conséquence directe</span>
+</div>
+<p class="text-red-700 text-sm">
                             Génération d'<strong>émissions de CO₂</strong> proportionnelles à la consommation électrique
                         </p>
-                    </div>
-                    
-                    <!-- Flow diagram -->
-                    <div class="flex items-center justify-between space-x-4">
-                        <div class="flow-element">
-                            <div class="flow-icon bg-yellow-500">
-                                <i class="fas fa-plug"></i>
-                            </div>
-                            <p class="text-xs font-semibold text-gray-700">Électricité</p>
-                        </div>
-                        
-                        <div class="flow-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        
-                        <div class="flow-element">
-                            <div class="flow-icon bg-blue-500">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <p class="text-xs font-semibold text-gray-700">Stockage</p>
-                        </div>
-                        
-                        <div class="flow-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        
-                        <div class="flow-element">
-                            <div class="flow-icon bg-red-500">
-                                <i class="fas fa-smog"></i>
-                            </div>
-                            <p class="text-xs font-semibold text-gray-700">CO₂</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Objective section -->
-        <div class="mt-6 animate-slide-up animate-delay-600">
-            <div class="highlight-box">
-                <div class="flex items-center mb-3">
-                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
-                        <i class="fas fa-target text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800">
-                        <span class="emoji-accent">🎯</span>Objectif de ce document
+</div>
+<!-- Flow diagram -->
+<div class="flex items-center justify-between space-x-4">
+<div class="flow-element">
+<div class="flow-icon bg-yellow-500">
+<i class="fas fa-plug"></i>
+</div>
+<p class="text-xs font-semibold text-gray-700">Électricité</p>
+</div>
+<div class="flow-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="flow-element">
+<div class="flow-icon bg-blue-500">
+<i class="fas fa-database"></i>
+</div>
+<p class="text-xs font-semibold text-gray-700">Stockage</p>
+</div>
+<div class="flow-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="flow-element">
+<div class="flow-icon bg-red-500">
+<i class="fas fa-smog"></i>
+</div>
+<p class="text-xs font-semibold text-gray-700">CO₂</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Objective section -->
+<div class="mt-6 animate-slide-up animate-delay-600">
+<div class="highlight-box">
+<div class="flex items-center mb-3">
+<div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-target text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800">
+<span class="emoji-accent">🎯</span>Objectif de ce document
                     </h3>
-                </div>
-                <p class="text-lg text-gray-700 leading-relaxed">
+</div>
+<p class="text-lg text-gray-700 leading-relaxed">
                     Présenter une <strong>méthode mathématique</strong> pour estimer l'empreinte carbone liée au stockage numérique et fournir des outils de comparaison pratiques.
                 </p>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center">
-                    <i class="fas fa-book-open mr-2"></i>
-                    <span>Concepts fondamentaux</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-industry mr-2"></i>
-                    <span>Impact des data centers</span>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <span class="font-bold">2 / 12</span>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<span><br/></span></div>
+</div>
+</div>
+<!-- Slide Number -->
+<div class="slide-number">2</div>
+</div>
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="fr">
+
+<html data-theme="light" lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulation Mathématique - Empreinte Carbone du Stockage Numérique</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Formulation Mathématique - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
@@ -769,7 +781,7 @@
             top: 1.5rem;
             right: 2rem;
             font-weight: 700;
-            color: #374151;
+            color: #F59E0B;
             font-size: 1.125rem;
         }
         
@@ -777,185 +789,180 @@
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="slide-container flex flex-col px-16 py-8 relative">
-        <!-- Decorative elements -->
-        <div class="decorative-element top-16 right-20">
-            <i class="fas fa-calculator text-9xl text-blue-400"></i>
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-calculator text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-function text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+            Systnaps
         </div>
-        <div class="decorative-element bottom-20 left-20">
-            <i class="fas fa-function text-8xl text-green-400"></i>
-        </div>
-        
-        <!-- Systnaps branding -->
-        <div class="systnaps-branding">
-            <span class="systnaps-accent">Systnaps</span>
-        </div>
-        
-        <!-- Header -->
-        <div class="section-header animate-slide-up">
-            <div class="icon-header">
-                <i class="fas fa-formula"></i>
-            </div>
-            <h1 class="text-3xl title-gradient">
-                <span class="emoji-accent">📐</span>Formulation Mathématique
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-formula"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">📐</span>Formulation Mathématique
             </h1>
-        </div>
-        
-        <!-- Main content grid -->
-        <div class="grid grid-cols-2 gap-8 flex-1">
-            <!-- Left column - Formula and parameters -->
-            <div class="space-y-4">
-                <!-- Formula section -->
-                <div class="animate-slide-left animate-delay-300">
-                    <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                        <i class="fas fa-equals text-blue-500 mr-2"></i>
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-8 flex-1">
+<!-- Left column - Formula and parameters -->
+<div class="space-y-4">
+<!-- Formula section -->
+<div class="animate-slide-left animate-delay-300">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-equals text-blue-500 mr-2"></i>
                         Formule de Base
                     </h2>
-                    <div class="formula-box mb-3">
+<div class="formula-box mb-3">
                         E = S × F
                     </div>
-                    <p class="text-center text-gray-600 font-semibold text-sm">
+<p class="text-center text-gray-600 font-semibold text-sm">
                         Empreinte carbone du stockage numérique
                     </p>
-                </div>
-                
-                <!-- Parameters -->
-                <div class="animate-slide-left animate-delay-600">
-                    <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                        <i class="fas fa-cogs text-green-500 mr-2"></i>
+</div>
+<!-- Parameters -->
+<div class="animate-slide-left animate-delay-600">
+<h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-cogs text-green-500 mr-2"></i>
                         Paramètres
                     </h3>
-                    <div class="space-y-3">
-                        <div class="parameter-card">
-                            <div class="flex items-center">
-                                <div class="parameter-icon bg-blue-500">E</div>
-                                <div>
-                                    <p class="font-bold text-gray-800 text-sm">Empreinte carbone</p>
-                                    <p class="text-xs text-gray-600">en kg CO₂/an</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="parameter-card">
-                            <div class="flex items-center">
-                                <div class="parameter-icon bg-green-500">S</div>
-                                <div>
-                                    <p class="font-bold text-gray-800 text-sm">Taille du stockage</p>
-                                    <p class="text-xs text-gray-600">en gigaoctets (Go)</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="parameter-card">
-                            <div class="flex items-center">
-                                <div class="parameter-icon bg-purple-500">F</div>
-                                <div>
-                                    <p class="font-bold text-gray-800 text-sm">Facteur d'émission</p>
-                                    <p class="text-xs text-gray-600">en kg CO₂/Go/an</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Factor value -->
-                <div class="factor-highlight">
-                    <h4 class="font-bold text-gray-800 mb-2 text-sm">
-                        <span class="emoji-accent">💡</span>Valeur de référence :
+<div class="space-y-3">
+<div class="parameter-card">
+<div class="flex items-center">
+<div class="parameter-icon bg-blue-500">E</div>
+<div>
+<p class="font-bold text-gray-800 text-sm">Empreinte carbone</p>
+<p class="text-xs text-gray-600">en kg CO₂/an</p>
+</div>
+</div>
+</div>
+<div class="parameter-card">
+<div class="flex items-center">
+<div class="parameter-icon bg-green-500">S</div>
+<div>
+<p class="font-bold text-gray-800 text-sm">Taille du stockage</p>
+<p class="text-xs text-gray-600">en gigaoctets (Go)</p>
+</div>
+</div>
+</div>
+<div class="parameter-card">
+<div class="flex items-center">
+<div class="parameter-icon bg-purple-500">F</div>
+<div>
+<p class="font-bold text-gray-800 text-sm">Facteur d'émission</p>
+<p class="text-xs text-gray-600">en kg CO₂/Go/an</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Factor value -->
+<div class="factor-highlight">
+<h4 class="font-bold text-gray-800 mb-2 text-sm">
+<span class="emoji-accent">💡</span>Valeur de référence :
                     </h4>
-                    <div class="text-xl font-bold text-green-700 mb-1">
+<div class="text-xl font-bold text-green-700 mb-1">
                         F = 0,2095 kg CO₂/Go/an
                     </div>
-                    <p class="text-xs text-gray-600">
+<p class="text-xs text-gray-600">
                         Source : Green Cloud Computing, 2021
                     </p>
-                </div>
-            </div>
-            
-            <!-- Right column - Unit conversions -->
-            <div class="animate-slide-right animate-delay-300">
-                <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                    <i class="fas fa-exchange-alt text-green-500 mr-2"></i>
-                    <span class="emoji-accent">🔄</span>Conversions d'Unités
+</div>
+</div>
+<!-- Right column - Unit conversions -->
+<div class="animate-slide-right animate-delay-300">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-exchange-alt text-green-500 mr-2"></i>
+<span class="emoji-accent">🔄</span>Conversions d'Unités
                 </h2>
-                
-                <div class="space-y-2 mb-4">
-                    <div class="conversion-card">
-                        <strong>1 Ko</strong> = 1 024 octets
+<div class="space-y-2 mb-4">
+<div class="conversion-card">
+<strong>1 Ko</strong> = 1 024 octets
                     </div>
-                    <div class="conversion-card">
-                        <strong>1 Mo</strong> = 1 024 × 1 024 = 1 048 576 octets
+<div class="conversion-card">
+<strong>1 Mo</strong> = 1 024 × 1 024 = 1 048 576 octets
                     </div>
-                    <div class="conversion-card">
-                        <strong>1 Go</strong> = 1 024³ = 1 073 741 824 octets
+<div class="conversion-card">
+<strong>1 Go</strong> = 1 024³ = 1 073 741 824 octets
                     </div>
-                </div>
-                
-                <!-- Conversion formula -->
-                <div class="mb-4">
-                    <h4 class="font-bold text-gray-800 mb-2 text-sm flex items-center">
-                        <i class="fas fa-calculator mr-2"></i>
-                        <span class="emoji-accent">🧮</span>Formule de conversion
+</div>
+<!-- Conversion formula -->
+<div class="mb-4">
+<h4 class="font-bold text-gray-800 mb-2 text-sm flex items-center">
+<i class="fas fa-calculator mr-2"></i>
+<span class="emoji-accent">🧮</span>Formule de conversion
                     </h4>
-                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-center">
-                        <div class="font-mono text-lg font-bold text-gray-800">
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-center">
+<div class="font-mono text-lg font-bold text-gray-800">
                             S<sub>Go</sub> = S<sub>octets</sub> / 1 073 741 824
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Interpretation box -->
-                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                    <h4 class="font-bold text-blue-800 mb-2 text-sm flex items-center">
-                        <i class="fas fa-lightbulb mr-2"></i>
-                        <span class="emoji-accent">🔍</span>Interprétation
+</div>
+</div>
+<!-- Interpretation box -->
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+<h4 class="font-bold text-blue-800 mb-2 text-sm flex items-center">
+<i class="fas fa-lightbulb mr-2"></i>
+<span class="emoji-accent">🔍</span>Interprétation
                     </h4>
-                    <p class="text-blue-700 text-sm leading-relaxed">
+<p class="text-blue-700 text-sm leading-relaxed">
                         Le facteur F = 0,2095 signifie que <strong>chaque gigaoctet stocké pendant un an</strong> génère en moyenne <strong>0,2095 kg de CO₂</strong>.
                     </p>
-                    <div class="mt-2 p-2 bg-blue-100 rounded-lg">
-                        <p class="text-xs text-blue-800 font-semibold">
-                            <span class="emoji-accent">⚡</span>
+<div class="mt-2 p-2 bg-blue-100 rounded-lg">
+<p class="text-xs text-blue-800 font-semibold">
+<span class="emoji-accent">⚡</span>
                             Impact des serveurs, climatisation et infrastructure réseau
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center">
-                    <i class="fas fa-formula mr-2"></i>
-                    <span>Modèle E = S × F</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-exchange-alt mr-2"></i>
-                    <span>Conversions d'unités</span>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <span class="font-bold">3 / 12</span>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="fas fa-formula mr-2"></i>
+<span><br/></span></div><div class="flex items-center">
+<span><br/></span>
+</div>
+</div>
+</div>
+<!-- Slide Number -->
+<div class="slide-number">3</div>
+</div>
 </body>
 </html>
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Numérique - Empreinte Carbone du Stockage Numérique</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Application Numérique - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
@@ -1127,170 +1134,164 @@
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="slide-container flex flex-col px-16 py-8 relative">
-        <!-- Decorative elements -->
-        <div class="decorative-element top-16 right-20">
-            <i class="fas fa-calculator text-9xl text-blue-400"></i>
-        </div>
-        <div class="decorative-element bottom-20 left-20">
-            <i class="fas fa-chart-bar text-8xl text-green-400"></i>
-        </div>
-        
-        <!-- Systnaps branding -->
-        <div class="systnaps-branding">
-            <span class="systnaps-accent">Systnaps</span>
-        </div>
-        
-        <!-- Header -->
-        <div class="section-header animate-slide-up">
-            <div class="icon-header">
-                <i class="fas fa-calculator"></i>
-            </div>
-            <h1 class="text-3xl title-gradient">
-                <span class="emoji-accent">🧮</span>Application Numérique
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-calculator text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-chart-bar text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span class="systnaps-accent">Systnaps</span>
+</div>
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-calculator"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">🧮</span>Application Numérique
             </h1>
-        </div>
-        
-        <!-- Main content grid -->
-        <div class="grid grid-cols-2 gap-8 flex-1">
-            <!-- Left column - Calculation steps -->
-            <div class="space-y-4">
-                <!-- Example setup -->
-                <div class="animate-slide-up animate-delay-300">
-                    <div class="calculation-box">
-                        <div class="flex items-center mb-3">
-                            <div class="step-indicator">1</div>
-                            <h2 class="text-lg font-bold text-gray-800">
-                                <span class="emoji-accent">📝</span>Exemple : 500 Go
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-8 flex-1">
+<!-- Left column - Calculation steps -->
+<div class="space-y-4">
+<!-- Example setup -->
+<div class="animate-slide-up animate-delay-300">
+<div class="calculation-box">
+<div class="flex items-center mb-3">
+<div class="step-indicator">1</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">📝</span>Exemple : 500 Go
                             </h2>
-                        </div>
-                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                            <div class="flex items-center justify-between text-sm">
-                                <span class="text-gray-700">Volume :</span>
-                                <span class="font-bold text-blue-700">S = 500 Go</span>
-                            </div>
-                            <div class="flex items-center justify-between text-sm mt-1">
-                                <span class="text-gray-700">Facteur :</span>
-                                <span class="font-bold text-blue-700">F = 0,2095 kg CO₂/Go/an</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Calculation process -->
-                <div class="animate-slide-up animate-delay-600">
-                    <div class="calculation-box">
-                        <div class="flex items-center mb-3">
-                            <div class="step-indicator">2</div>
-                            <h2 class="text-lg font-bold text-gray-800">
-                                <span class="emoji-accent">🔢</span>Calcul
+</div>
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+<div class="flex items-center justify-between text-sm">
+<span class="text-gray-700">Volume :</span>
+<span class="font-bold text-blue-700">S = 500 Go</span>
+</div>
+<div class="flex items-center justify-between text-sm mt-1">
+<span class="text-gray-700">Facteur :</span>
+<span class="font-bold text-blue-700">F = 0,2095 kg CO₂/Go/an</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Calculation process -->
+<div class="animate-slide-up animate-delay-600">
+<div class="calculation-box">
+<div class="flex items-center mb-3">
+<div class="step-indicator">2</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">🔢</span>Calcul
                             </h2>
-                        </div>
-                        
-                        <div class="formula-step">
+</div>
+<div class="formula-step">
                             E = S × F
                         </div>
-                        
-                        <div class="formula-step">
+<div class="formula-step">
                             E = 500 × 0,2095
                         </div>
-                        
-                        <div class="result-highlight">
-                            <div class="text-2xl font-bold text-green-700 mb-1">
+<div class="result-highlight">
+<div class="text-2xl font-bold text-green-700 mb-1">
                                 E = 104,75 kg CO₂/an
                             </div>
-                            <p class="text-gray-600 text-sm">Empreinte carbone annuelle</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Verification -->
-                <div class="verification-box">
-                    <h3 class="font-bold text-green-800 mb-2 flex items-center text-sm">
-                        <i class="fas fa-check-circle mr-2"></i>
-                        <span class="emoji-accent">✅</span>Validation
+<p class="text-gray-600 text-sm">Empreinte carbone annuelle</p>
+</div>
+</div>
+</div>
+<!-- Verification -->
+<div class="verification-box">
+<h3 class="font-bold text-green-800 mb-2 flex items-center text-sm">
+<i class="fas fa-check-circle mr-2"></i>
+<span class="emoji-accent">✅</span>Validation
                     </h3>
-                    <p class="text-green-700 text-xs leading-relaxed">
+<p class="text-green-700 text-xs leading-relaxed">
                         Résultat validé avec l'outil <strong>MyImpact</strong>, confirmant l'alignement avec les standards industriels.
                     </p>
-                </div>
-            </div>
-            
-            <!-- Right column - Visual representation -->
-            <div class="animate-slide-up animate-delay-300">
-                <h2 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
-                    <i class="fas fa-chart-pie text-green-500 mr-2"></i>
-                    <span class="emoji-accent">📊</span>Visualisation
+</div>
+</div>
+<!-- Right column - Visual representation -->
+<div class="animate-slide-up animate-delay-300">
+<h2 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+<i class="fas fa-chart-pie text-green-500 mr-2"></i>
+<span class="emoji-accent">📊</span>Visualisation
                 </h2>
-                
-                <!-- Chart container -->
-                <div class="chart-container mb-4">
-                    <canvas id="emissionChart"></canvas>
-                </div>
-                
-                <!-- Key metrics cards -->
-                <div class="space-y-3">
-                    <div class="metric-card border-l-blue-500">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-xs text-blue-600 font-semibold">DONNÉES</p>
-                                <p class="text-lg font-bold text-blue-800">500 Go</p>
-                            </div>
-                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-                                <i class="fas fa-database text-white text-sm"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="metric-card border-l-green-500">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-xs text-green-600 font-semibold">ÉMISSIONS</p>
-                                <p class="text-lg font-bold text-green-800">104,75 kg</p>
-                            </div>
-                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                <i class="fas fa-smog text-white text-sm"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="metric-card border-l-purple-500">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-xs text-purple-600 font-semibold">FACTEUR</p>
-                                <p class="text-base font-bold text-purple-800">0,2095</p>
-                            </div>
-                            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
-                                <i class="fas fa-calculator text-white text-sm"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center">
-                    <i class="fas fa-calculator mr-2"></i>
-                    <span>Exemple : 500 Go → 104,75 kg CO₂/an</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-check-circle mr-2"></i>
-                    <span>Validé par MyImpact</span>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <span class="font-bold">4 / 12</span>
-            </div>
-        </div>
-    </div>
-
-    <script>
+<!-- Chart container -->
+<div class="chart-container mb-4">
+<canvas id="emissionChart"></canvas>
+</div>
+<!-- Key metrics cards -->
+<div class="space-y-3">
+<div class="metric-card border-l-blue-500">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs text-blue-600 font-semibold">DONNÉES</p>
+<p class="text-lg font-bold text-blue-800">500 Go</p>
+</div>
+<div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+<i class="fas fa-database text-white text-sm"></i>
+</div>
+</div>
+</div>
+<div class="metric-card border-l-green-500">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs text-green-600 font-semibold">ÉMISSIONS</p>
+<p class="text-lg font-bold text-green-800">104,75 kg</p>
+</div>
+<div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+<i class="fas fa-smog text-white text-sm"></i>
+</div>
+</div>
+</div>
+<div class="metric-card border-l-purple-500">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-xs text-purple-600 font-semibold">FACTEUR</p>
+<p class="text-base font-bold text-purple-800">0,2095</p>
+</div>
+<div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+<i class="fas fa-calculator text-white text-sm"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="fas fa-calculator mr-2"></i>
+<span>Exemple : 500 Go → 104,75 kg CO₂/an</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle mr-2"></i>
+<span>Validé par MyImpact</span>
+</div>
+</div>
+</div>
+<!-- Slide Number -->
+<div class="slide-number">4</div>
+</div>
+<script>
         // Chart configuration
         const ctx = document.getElementById('emissionChart').getContext('2d');
         
@@ -1364,15 +1365,16 @@
 </body>
 </html>
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparaison avec les Émissions de Transport - Empreinte Carbone du Stockage Numérique</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Comparaison avec les Émissions de Transport - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
@@ -1565,7 +1567,7 @@
             top: 1.5rem;
             right: 2rem;
             font-weight: 700;
-            color: #374151;
+            color: #F59E0B;
             font-size: 1.125rem;
         }
         
@@ -1573,194 +1575,187 @@
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="slide-container flex flex-col px-16 py-8 relative">
-        <!-- Decorative elements -->
-        <div class="decorative-element top-16 right-20">
-            <i class="fas fa-car text-9xl text-blue-400"></i>
-        </div>
-        <div class="decorative-element bottom-20 left-20">
-            <i class="fas fa-balance-scale text-8xl text-green-400"></i>
-        </div>
-        
-        <!-- Systnaps branding -->
-        <div class="systnaps-branding">
-            <span class="systnaps-accent">Systnaps</span>
-        </div>
-        
-        <!-- Header -->
-        <div class="section-header animate-slide-up">
-            <div class="icon-header">
-                <i class="fas fa-car"></i>
-            </div>
-            <h1 class="text-3xl title-gradient">
-                <span class="emoji-accent">🚗</span>Comparaison avec les Émissions de Transport
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-car text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-balance-scale text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span>Systnaps</span>
+</div>
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-car"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">🚗</span>Comparaison avec les Émissions de Transport
             </h1>
-        </div>
-        
-        <!-- Main content grid -->
-        <div class="grid grid-cols-2 gap-8 flex-1">
-            <!-- Left column - Calculation method -->
-            <div class="space-y-4">
-                <!-- Reference data -->
-                <div class="animate-slide-left animate-delay-300">
-                    <div class="comparison-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-database text-blue-500 mr-2"></i>
-                            <span class="emoji-accent">📊</span>Données ADEME
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-8 flex-1">
+<!-- Left column - Calculation method -->
+<div class="space-y-4">
+<!-- Reference data -->
+<div class="animate-slide-left animate-delay-300">
+<div class="comparison-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-database text-blue-500 mr-2"></i>
+<span class="emoji-accent">📊</span>Données ADEME
                         </h2>
-                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                            <p class="text-gray-700 text-sm mb-2">
-                                <strong>10 km</strong> en voiture thermique = <strong>2,18 kg CO₂</strong>
-                            </p>
-                            <p class="text-gray-700 text-sm">
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+<p class="text-gray-700 text-sm mb-2">
+<strong>10 km</strong> en voiture thermique = <strong>2,18 kg CO₂</strong>
+</p>
+<p class="text-gray-700 text-sm">
                                 Objectif : Distance équivalente à <strong>104,75 kg CO₂</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Calculation steps -->
-                <div class="animate-slide-left animate-delay-600">
-                    <div class="comparison-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-calculator text-green-500 mr-2"></i>
-                            <span class="emoji-accent">➗</span>Produit en Croix
+</p>
+</div>
+</div>
+</div>
+<!-- Calculation steps -->
+<div class="animate-slide-left animate-delay-600">
+<div class="comparison-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-calculator text-green-500 mr-2"></i>
+<span class="emoji-accent">➗</span>Produit en Croix
                         </h2>
-                        
-                        <div class="calculation-step">
+<div class="calculation-step">
                             10 km → 2,18 kg CO₂
                         </div>
-                        <div class="calculation-step">
+<div class="calculation-step">
                             d km → 104,75 kg CO₂
                         </div>
-                        <div class="calculation-step">
+<div class="calculation-step">
                             d = (104,75 × 10) / 2,18
                         </div>
-                        <div class="calculation-step">
+<div class="calculation-step">
                             d = 1047,5 / 2,18
                         </div>
-                        
-                        <div class="result-highlight">
-                            <div class="text-2xl font-bold text-green-700">
-                                <span class="emoji-accent">🎯</span>d ≈ 480,5 km
+<div class="result-highlight">
+<div class="text-2xl font-bold text-green-700">
+<span class="emoji-accent">🎯</span>d ≈ 480,5 km
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right column - Visual comparison -->
-            <div class="space-y-4">
-                <!-- Visual comparison -->
-                <div class="animate-slide-right animate-delay-300">
-                    <div class="comparison-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-balance-scale text-purple-500 mr-2"></i>
-                            <span class="emoji-accent">⚖️</span>Équivalence Visuelle
+</div>
+</div>
+</div>
+</div>
+<!-- Right column - Visual comparison -->
+<div class="space-y-4">
+<!-- Visual comparison -->
+<div class="animate-slide-right animate-delay-300">
+<div class="comparison-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-balance-scale text-purple-500 mr-2"></i>
+<span class="emoji-accent">⚖️</span>Équivalence Visuelle
                         </h2>
-                        
-                        <div class="visual-comparison">
-                            <div class="comparison-item">
-                                <div class="transport-icon bg-blue-500">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <p class="font-bold text-blue-700">500 Go</p>
-                                <p class="text-xs text-gray-600">stockés/an</p>
-                            </div>
-                            
-                            <div class="comparison-arrow">
-                                <i class="fas fa-equals"></i>
-                            </div>
-                            
-                            <div class="comparison-item">
-                                <div class="transport-icon bg-red-500">
-                                    <i class="fas fa-car"></i>
-                                </div>
-                                <p class="font-bold text-red-700">480,5 km</p>
-                                <p class="text-xs text-gray-600">en voiture</p>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-                            <p class="text-green-800 font-semibold text-center text-sm">
-                                <span class="emoji-accent">🌱</span>
+<div class="visual-comparison">
+<div class="comparison-item">
+<div class="transport-icon bg-blue-500">
+<i class="fas fa-database"></i>
+</div>
+<p class="font-bold text-blue-700">500 Go</p>
+<p class="text-xs text-gray-600">stockés/an</p>
+</div>
+<div class="comparison-arrow">
+<i class="fas fa-equals"></i>
+</div>
+<div class="comparison-item">
+<div class="transport-icon bg-red-500">
+<i class="fas fa-car"></i>
+</div>
+<p class="font-bold text-red-700">480,5 km</p>
+<p class="text-xs text-gray-600">en voiture</p>
+</div>
+</div>
+<div class="bg-green-50 border border-green-200 rounded-lg p-3">
+<p class="text-green-800 font-semibold text-center text-sm">
+<span class="emoji-accent">🌱</span>
                                 104,75 kg CO₂/an dans les deux cas
                             </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Practical example -->
-                <div class="animate-slide-right animate-delay-600">
-                    <div class="comparison-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-map-marker-alt text-indigo-500 mr-2"></i>
-                            <span class="emoji-accent">📍</span>Exemple Pratique
+</div>
+</div>
+</div>
+<!-- Practical example -->
+<div class="animate-slide-right animate-delay-600">
+<div class="comparison-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-map-marker-alt text-indigo-500 mr-2"></i>
+<span class="emoji-accent">📍</span>Exemple Pratique
                         </h2>
-                        
-                        <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-indigo-800 mb-2">
-                                    <span class="emoji-accent">🗺️</span>Distance équivalente
+<div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+<div class="text-center">
+<div class="text-lg font-bold text-indigo-800 mb-2">
+<span class="emoji-accent">🗺️</span>Distance équivalente
                                 </div>
-                                <div class="text-2xl font-bold text-indigo-700 mb-1">
+<div class="text-2xl font-bold text-indigo-700 mb-1">
                                     Paris ↔ Lyon
                                 </div>
-                                <p class="text-indigo-600 text-sm">
+<p class="text-indigo-600 text-sm">
                                     Aller-retour approximatif
                                 </p>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mt-3">
-                            <p class="text-yellow-800 text-xs">
-                                <span class="emoji-accent">⚠️</span>
+</div>
+</div>
+<div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mt-3">
+<p class="text-yellow-800 text-xs">
+<span class="emoji-accent">⚠️</span>
                                 Les émissions varient selon le type de véhicule et les conditions de conduite
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Conclusion section -->
-        <div class="mt-4 animate-slide-up animate-delay-600">
-            <div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-4">
-                <div class="flex items-center mb-2">
-                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-3">
-                        <i class="fas fa-lightbulb text-white"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800">
-                        <span class="emoji-accent">💡</span>Conclusion
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Conclusion section -->
+<div class="mt-4 animate-slide-up animate-delay-600">
+<div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-xl p-4">
+<div class="flex items-center mb-2">
+<div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-lightbulb text-white"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">💡</span>Conclusion
                     </h3>
-                </div>
-                <p class="text-gray-700 leading-relaxed">
+</div>
+<p class="text-gray-700 leading-relaxed">
                     Stocker <strong>500 Go pendant un an</strong> génère la même quantité de CO₂ qu'un trajet d'environ 
                     <strong>480,5 km en voiture thermique</strong>.
                 </p>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center">
-                    <i class="fas fa-car mr-2"></i>
-                    <span>500 Go ≈ 480,5 km en voiture</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-calculator mr-2"></i>
-                    <span>Méthode : produit en croix</span>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <span class="font-bold">5 / 12</span>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="fas fa-car mr-2"></i>
+<span>500 Go ≈ 480,5 km en voiture</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-calculator mr-2"></i>
+<span>Méthode : produit en croix</span>
+</div>
+</div>
+</div>
+<!-- Slide Number -->
+<div class="slide-number">5</div>
+</div>
 </body>
 </html>
 <!DOCTYPE html>
@@ -1846,6 +1841,16 @@
         color: #F59E0B;
         font-weight: bold;
         font-size: 1.25rem;
+    }
+    
+    .slide-number {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #0f5c8c;
+        opacity: 0.8;
     }
 </style>
 </head>
@@ -1957,7 +1962,7 @@
 <div class="bg-blue-100 p-2 rounded-lg text-center mb-4">
 <p class="text-blue-800 text-sm">
 <i class="fas fa-chart-line mr-1"></i>
-Réduction de 70 à 90% des émissions CO₂
+Réduction des émissions CO₂
 </p>
 </div>
 <!-- Visual Comparison -->
@@ -1976,7 +1981,7 @@ Réduction de 70 à 90% des émissions CO₂
 <div class="mt-4 bg-amber-50 p-2 rounded-lg">
 <div class="flex items-start">
 <div class="w-5 h-5 bg-amber-500 rounded-full flex items-center justify-center mr-2 text-white text-xs mt-1">!</div>
-<p class="text-xs text-amber-800">Cette fourchette de 70 à 90% dépend principalement du niveau d'énergie renouvelable dans le data center, de la performance énergétique de l'infrastructure et du mix énergétique local du fournisseur.</p>
+<p class="text-xs text-amber-800">Cette réduction dépend principalement du niveau d'énergie renouvelable dans le data center, de la performance énergétique de l'infrastructure et du mix énergétique local du fournisseur.</p>
 </div>
 </div>
 </div>
@@ -1990,11 +1995,12 @@ Réduction de 70 à 90% des émissions CO₂
 </div>
 <div class="flex items-center">
 <i class="fas fa-chart-line mr-2 text-blue-500"></i>
-<span>Réduction de 70 à 90% possible</span>
+<span>Réduction possible</span>
 </div>
 </div>
-<div>6 / 12</div>
 </div>
+<!-- Slide Number -->
+<div class="slide-number">6</div>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const ctx = document.getElementById('emissionsChart').getContext('2d');
@@ -2059,15 +2065,16 @@ Réduction de 70 à 90% des émissions CO₂
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="fr">
+
+<html data-theme="light" lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Méthodologie DATA M4R de la solution Data Recycling® - Empreinte Carbone du Stockage Numérique</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Méthodologie Data M4R® de la solution Data Recycling - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
@@ -2159,6 +2166,8 @@ Réduction de 70 à 90% des émissions CO₂
             border-radius: 16px;
             padding: 1.5rem;
             margin: 1rem 0;
+            position: relative;
+            z-index: 10;
         }
         
         .process-step {
@@ -2292,7 +2301,7 @@ Réduction de 70 à 90% des émissions CO₂
             top: 1.5rem;
             right: 2rem;
             font-weight: 700;
-            color: #374151;
+            color: #f97316;
             font-size: 1.125rem;
         }
         
@@ -2300,216 +2309,215 @@ Réduction de 70 à 90% des émissions CO₂
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .disclaimer-text {
+            font-style: italic;
+            font-size: 0.8rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+        
+        .orange-highlight {
+            color: #f97316;
+            font-weight: 600;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="slide-container flex flex-col px-16 py-8 relative">
-        <!-- Decorative elements -->
-        <div class="decorative-element top-16 right-20">
-            <i class="fas fa-recycle text-9xl text-green-400"></i>
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-recycle text-9xl text-green-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-cogs text-8xl text-blue-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+            Systnaps
         </div>
-        <div class="decorative-element bottom-20 left-20">
-            <i class="fas fa-cogs text-8xl text-blue-400"></i>
-        </div>
-        
-        <!-- Systnaps branding -->
-        <div class="systnaps-branding">
-            <span class="systnaps-accent">Systnaps</span>
-        </div>
-        
-        <!-- Header -->
-        <div class="section-header animate-slide-up">
-            <div class="icon-header">
-                <i class="fas fa-recycle"></i>
-            </div>
-            <h1 class="text-3xl title-gradient">
-                <span class="emoji-accent">♻️</span>Méthodologie DATA M4R de la solution Data Recycling®
-            </h1>
-        </div>
-        
-        <!-- M4R Process Flow -->
-        <div class="animate-slide-up animate-delay-300">
-            <div class="m4r-process">
-                <div class="process-step">
-                    <div class="process-icon bg-blue-500">
-                        <i class="fas fa-map"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-800 text-sm">Cartographier</h3>
-                    <p class="text-xs text-gray-600">Identifier les données</p>
-                    <div class="process-arrow">
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-icon bg-purple-500">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-800 text-sm">Réguler</h3>
-                    <p class="text-xs text-gray-600">Gouvernance</p>
-                    <div class="process-arrow">
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-icon bg-red-500">
-                        <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-800 text-sm">Réduire</h3>
-                    <p class="text-xs text-gray-600">Optimiser</p>
-                    <div class="process-arrow">
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-icon bg-orange-500">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-800 text-sm">Réutiliser</h3>
-                    <p class="text-xs text-gray-600">Valoriser</p>
-                    <div class="process-arrow">
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-icon bg-green-500">
-                        <i class="fas fa-recycle"></i>
-                    </div>
-                    <h3 class="font-bold text-gray-800 text-sm">Recycler</h3>
-                    <p class="text-xs text-gray-600">Économie circulaire</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Main content grid -->
-        <div class="grid grid-cols-2 gap-6 flex-1">
-            <!-- Left column - Application to Carbon -->
-            <div class="animate-slide-left animate-delay-600">
-                <div class="methodology-card">
-                    <div class="flex items-center mb-3">
-                        <div class="step-badge">1</div>
-                        <h2 class="text-lg font-bold text-gray-800">
-                            <span class="emoji-accent">🎯</span>Application à l'Empreinte Carbone
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-recycle"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">♻️</span>Méthodologie DATA M4R<sup>®</sup> de la solution Data Recycling<sup>®</sup>
+</h1>
+</div>
+<!-- M4R Process Flow - Made more visible with z-index and higher contrast -->
+<div class="animate-slide-up animate-delay-300">
+<div class="m4r-process">
+<div class="process-step">
+<div class="process-icon bg-blue-500">
+<i class="fas fa-map"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Cartographier</h3>
+<p class="text-xs text-gray-600">Identifier les données</p>
+<div class="process-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="process-step">
+<div class="process-icon bg-purple-500">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Réguler</h3>
+<p class="text-xs text-gray-600">Gouvernance</p>
+<div class="process-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="process-step">
+<div class="process-icon bg-red-500">
+<i class="fas fa-compress-alt"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Réduire</h3>
+<p class="text-xs text-gray-600">Optimiser</p>
+<div class="process-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="process-step">
+<div class="process-icon bg-orange-500">
+<i class="fas fa-sync-alt"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Réutiliser</h3>
+<p class="text-xs text-gray-600">Valoriser</p>
+<div class="process-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+</div>
+<div class="process-step">
+<div class="process-icon bg-green-500">
+<i class="fas fa-recycle"></i>
+</div>
+<h3 class="font-bold text-gray-800 text-sm">Recycler</h3>
+<p class="text-xs text-gray-600">Économie circulaire</p>
+</div>
+</div>
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-6 flex-1">
+<!-- Left column - Application to Carbon -->
+<div class="animate-slide-left animate-delay-600">
+<div class="methodology-card">
+<div class="flex items-center mb-3">
+<div class="step-badge">1</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">🎯</span>Application à l'Empreinte Carbone
                         </h2>
-                    </div>
-                    
-                    <div class="space-y-2">
-                        <div class="benefit-item">
-                            <div class="benefit-icon bg-blue-500">
-                                <i class="fas fa-map"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm">Cartographier</p>
-                                <p class="text-xs text-gray-600">Sources d'émissions CO₂</p>
-                            </div>
-                        </div>
-                        
-                        <div class="benefit-item">
-                            <div class="benefit-icon bg-red-500">
-                                <i class="fas fa-compress-alt"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm">Réduire</p>
-                                <p class="text-xs text-gray-600">Optimiser stockage et usage</p>
-                            </div>
-                        </div>
-                        
-                        <div class="benefit-item">
-                            <div class="benefit-icon bg-green-500">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm">Recycler</p>
-                                <p class="text-xs text-gray-600">Économie circulaire des données</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right column - Benefits and Results -->
-            <div class="animate-slide-right animate-delay-600">
-                <div class="methodology-card">
-                    <div class="flex items-center mb-3">
-                        <div class="step-badge">2</div>
-                        <h2 class="text-lg font-bold text-gray-800">
-                            <span class="emoji-accent">📈</span>Bénéfices & Résultats
+</div>
+<div class="space-y-2">
+<div class="benefit-item">
+<div class="benefit-icon bg-blue-500">
+<i class="fas fa-map"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Phase Build</p>
+<p class="text-xs text-gray-600"><span class="orange-highlight">Jusqu'à 50%</span> de réduction des volumes de données</p>
+<p class="text-xs text-gray-500">Grâce à une meilleure maîtrise et suppression des données obsolètes</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-red-500">
+<i class="fas fa-compress-alt"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Phase Run</p>
+<p class="text-xs text-gray-600"><span class="orange-highlight">De 10 à 15%</span> de réduction de la consommation énergétique liée au stockage</p>
+<p class="text-xs text-gray-500">Par archivage sélectif et migration vers des environnements moins énergivores</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-yellow-500">
+<i class="fas fa-exclamation-circle"></i>
+</div>
+<div>
+<p class="text-xs font-semibold text-gray-700 italic">Ces chiffres sont des ordres de grandeur moyens constatés sur des projets, pas un engagement contractuel.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right column - Benefits and Results -->
+<div class="animate-slide-right animate-delay-600">
+<div class="methodology-card">
+<div class="flex items-center mb-3">
+<div class="step-badge">2</div>
+<h2 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">📈</span>Bénéfices &amp; Résultats
                         </h2>
-                    </div>
-                    
-                    <div class="space-y-2">
-                        <div class="benefit-item">
-                            <div class="benefit-icon bg-purple-500">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm">Mesure précise</p>
-                                <p class="text-xs text-gray-600">Quantification impact réel</p>
-                            </div>
-                        </div>
-                        
-                        <div class="benefit-item">
-                            <div class="benefit-icon bg-orange-500">
-                                <i class="fas fa-coins"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm">Économies</p>
-                                <p class="text-xs text-gray-600">Réduction coûts énergétiques</p>
-                            </div>
-                        </div>
-                        
-                        <div class="benefit-item">
-                            <div class="benefit-icon bg-teal-500">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-gray-800 text-sm">Conformité</p>
-                                <p class="text-xs text-gray-600">Standards environnementaux</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Bottom highlight -->
-        <div class="mt-4 animate-slide-up animate-delay-600">
-            <div class="highlight-box">
-                <div class="flex items-center justify-center mb-3">
-                    <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3">
-                        <i class="fas fa-rocket text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800">
-                        <span class="emoji-accent">🚀</span>Accélérez vos projets • Valorisez vos données • Réduisez votre impact !
+</div>
+<div class="space-y-2">
+<div class="benefit-item">
+<div class="benefit-icon bg-purple-500">
+<i class="fas fa-chart-line"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Efficience</p>
+<p class="text-xs text-gray-600">Maîtrise, réduction par archivage sélectif et purge</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-orange-500">
+<i class="fas fa-coins"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Économies</p>
+<p class="text-xs text-gray-600">Recyclage dans des espaces moins énergivores</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="benefit-icon bg-teal-500">
+<i class="fas fa-award"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Valeur probante</p>
+<p class="text-xs text-gray-600">Conservation des données pour l'analytique futur</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom highlight -->
+<div class="mt-4 animate-slide-up animate-delay-600">
+<div class="highlight-box">
+<div class="flex items-center justify-center mb-3">
+<div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-rocket text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800">
+<span class="emoji-accent">🚀</span>L'action de réduction se fait dans l'efficience
                     </h3>
-                </div>
-                <p class="text-gray-700 leading-relaxed">
-                    La méthodologie <strong>DATA M4R de la solution Data Recycling®</strong> de Systnaps appliquée à l'empreinte carbone permet une approche 
+</div>
+<p class="text-gray-700 leading-relaxed">
+                    La méthodologie <strong>Data M4R<sup>®</sup> de la solution Data Recycling<sup>®</sup></strong> permet une approche 
                     structurée et efficace pour mesurer, optimiser et réduire l'impact environnemental du stockage numérique.
                 </p>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center">
-                    <i class="fas fa-recycle mr-2"></i>
-                    <span>Méthodologie DATA M4R de la solution Data Recycling® Systnaps</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-leaf mr-2"></i>
-                    <span>Économie circulaire des données</span>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <span class="font-bold">7 / 12</span>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+</div>
+</div>
+</div>
+<!-- Slide Number -->
+<div class="slide-number">7</div>
+</div>
 </body>
 </html>
 <!DOCTYPE html>
@@ -2756,6 +2764,16 @@ Réduction de 70 à 90% des émissions CO₂
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -2916,7 +2934,7 @@ Réduction de 70 à 90% des émissions CO₂
 </div>
 <div>
 <p class="font-semibold text-gray-800 text-sm">Énergie verte</p>
-<p class="text-xs text-gray-600">Migration 70 à 90%</p>
+<p class="text-xs text-gray-600">Migration</p>
 </div>
 </div>
 <div class="action-item">
@@ -2959,8 +2977,8 @@ Réduction de 70 à 90% des émissions CO₂
 </div>
 </div>
 <div class="text-right">
-<div class="text-2xl font-bold text-green-700">70 à 90%</div>
-<p class="text-xs text-gray-600">Réduction CO₂ possible</p>
+<div class="text-2xl font-bold text-green-700">Réduction CO₂</div>
+<p class="text-xs text-gray-600">Impact mesurable</p>
 </div>
 </div>
 </div>
@@ -2969,22 +2987,25 @@ Réduction de 70 à 90% des émissions CO₂
 <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
 <div></div>
 <div class="flex items-center">
-<span class="font-bold">8 / 12</span>
+<span class="font-bold"></span>
 </div>
 </div>
+<!-- Slide Number -->
+<div class="slide-number">8</div>
 </div>
 </body>
 </html>
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sources et Références - Empreinte Carbone du Stockage Numérique</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sources et Références - Empreinte Carbone du Stockage Numérique</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 50%, #10b981 75%, #059669 100%);
@@ -3170,255 +3191,241 @@ Réduction de 70 à 90% des émissions CO₂
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="slide-container flex flex-col px-16 py-8 relative">
-        <!-- Decorative elements -->
-        <div class="decorative-element top-16 right-20">
-            <i class="fas fa-book text-9xl text-blue-400"></i>
-        </div>
-        <div class="decorative-element bottom-20 left-20">
-            <i class="fas fa-link text-8xl text-green-400"></i>
-        </div>
-        
-        <!-- Systnaps branding -->
-        <div class="systnaps-branding">
-            <span class="systnaps-accent">Systnaps</span>
-        </div>
-        
-        <!-- Header -->
-        <div class="section-header animate-slide-up">
-            <div class="icon-header">
-                <i class="fas fa-book"></i>
-            </div>
-            <h1 class="text-3xl title-gradient">
-                <span class="emoji-accent">📚</span>Sources et Références
+<div class="slide-container flex flex-col px-16 py-8 relative">
+<!-- Decorative elements -->
+<div class="decorative-element top-16 right-20">
+<i class="fas fa-book text-9xl text-blue-400"></i>
+</div>
+<div class="decorative-element bottom-20 left-20">
+<i class="fas fa-link text-8xl text-green-400"></i>
+</div>
+<!-- Systnaps branding -->
+<div class="systnaps-branding">
+<span class="systnaps-accent">Systnaps</span>
+</div>
+<!-- Header -->
+<div class="section-header animate-slide-up">
+<div class="icon-header">
+<i class="fas fa-book"></i>
+</div>
+<h1 class="text-3xl title-gradient">
+<span class="emoji-accent">📚</span>Sources et Références
             </h1>
-        </div>
-        
-        <!-- Main content grid -->
-        <div class="grid grid-cols-2 gap-8 flex-1">
-            <!-- Left column - Primary Sources -->
-            <div class="space-y-4">
-                <!-- Research Sources -->
-                <div class="animate-slide-left animate-delay-300">
-                    <div class="source-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-microscope text-green-500 mr-2"></i>
-                            <span class="emoji-accent">🔬</span>Sources de Recherche
+</div>
+<!-- Main content grid -->
+<div class="grid grid-cols-2 gap-8 flex-1">
+<!-- Left column - Primary Sources -->
+<div class="space-y-4">
+<!-- Research Sources -->
+<div class="animate-slide-left animate-delay-300">
+<div class="source-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-microscope text-green-500 mr-2"></i>
+<span class="emoji-accent">🔬</span>Sources de Recherche
                         </h2>
-                        
-                        <div class="space-y-3">
-                            <div class="source-item">
-                                <div class="flex items-start">
-                                    <div class="source-icon bg-green-500">
-                                        <i class="fas fa-leaf"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-gray-800 text-sm">Green Cloud Computing Study</p>
-                                        <p class="text-xs text-gray-600 mb-1">Analyse des émissions des data centers (2021)</p>
-                                        <p class="text-xs text-blue-600">Facteur d'émission : 0,2095 kg CO₂/Go/an</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="source-item">
-                                <div class="flex items-start">
-                                    <div class="source-icon bg-blue-500">
-                                        <i class="fas fa-car"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-gray-800 text-sm">ADEME</p>
-                                        <p class="text-xs text-gray-600 mb-1">Facteurs d'émission des transports</p>
-                                        <p class="text-xs text-blue-600">agirpourlatransition.ademe.fr</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="source-item">
-                                <div class="flex items-start">
-                                    <div class="source-icon bg-purple-500">
-                                        <i class="fas fa-globe"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-gray-800 text-sm">GHG Protocol</p>
-                                        <p class="text-xs text-gray-600 mb-1">Standards pour l'ajustement énergétique</p>
-                                        <p class="text-xs text-blue-600">Scope 2 - Énergie indirecte</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Key Statistics -->
-                <div class="animate-slide-left animate-delay-600">
-                    <div class="source-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-chart-bar text-indigo-500 mr-2"></i>
-                            <span class="emoji-accent">📊</span>Données Clés
+<div class="space-y-3">
+<div class="source-item">
+<div class="flex items-start">
+<div class="source-icon bg-green-500">
+<i class="fas fa-leaf"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Green Cloud Computing Study</p>
+<p class="text-xs text-gray-600 mb-1">Analyse des émissions des data centers (2021)</p>
+<p class="text-xs text-blue-600">Facteur d'émission : 0,2095 kg CO₂/Go/an</p>
+</div>
+</div>
+</div>
+<div class="source-item">
+<div class="flex items-start">
+<div class="source-icon bg-blue-500">
+<i class="fas fa-car"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">ADEME</p>
+<p class="text-xs text-gray-600 mb-1">Facteurs d'émission des transports</p>
+<p class="text-xs text-blue-600">agirpourlatransition.ademe.fr</p>
+</div>
+</div>
+</div>
+<div class="source-item">
+<div class="flex items-start">
+<div class="source-icon bg-purple-500">
+<i class="fas fa-globe"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">GHG Protocol</p>
+<p class="text-xs text-gray-600 mb-1">Standards pour l'ajustement énergétique</p>
+<p class="text-xs text-blue-600">Scope 2 - Énergie indirecte</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Statistics -->
+<div class="animate-slide-left animate-delay-600">
+<div class="source-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-chart-bar text-indigo-500 mr-2"></i>
+<span class="emoji-accent">📊</span>Données Clés
                         </h2>
-                        
-                        <div class="grid grid-cols-2 gap-3">
-                            <div class="key-stat border-l-blue-500">
-                                <div class="text-xl font-bold text-blue-700">0,2095</div>
-                                <p class="text-xs text-gray-600">kg CO₂/Go/an</p>
-                            </div>
-                            
-                            <div class="key-stat border-l-red-500">
-                                <div class="text-xl font-bold text-red-700">480,5 km</div>
-                                <p class="text-xs text-gray-600">Équivalent voiture</p>
-                            </div>
-                            
-                            <div class="key-stat border-l-green-500">
-                                <div class="text-xl font-bold text-green-700">70%</div>
-                                <p class="text-xs text-gray-600">Réduction possible</p>
-                            </div>
-                            
-                            <div class="key-stat border-l-purple-500">
-                                <div class="text-xl font-bold text-purple-700">2,18</div>
-                                <p class="text-xs text-gray-600">kg CO₂/10km</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right column - Validation and Tools -->
-            <div class="space-y-4">
-                <!-- Validation Tools -->
-                <div class="animate-slide-right animate-delay-300">
-                    <div class="source-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-check-double text-teal-500 mr-2"></i>
-                            <span class="emoji-accent">✅</span>Outils de Validation
+<div class="grid grid-cols-2 gap-3">
+<div class="key-stat border-l-blue-500">
+<div class="text-xl font-bold text-blue-700">0,2095</div>
+<p class="text-xs text-gray-600">kg CO₂/Go/an</p>
+</div>
+<div class="key-stat border-l-red-500">
+<div class="text-xl font-bold text-red-700">480,5 km</div>
+<p class="text-xs text-gray-600">Équivalent voiture</p>
+</div>
+<div class="key-stat border-l-green-500">
+<div class="text-xl font-bold text-green-700">70%</div>
+<p class="text-xs text-gray-600">Réduction possible</p>
+</div>
+<div class="key-stat border-l-purple-500">
+<div class="text-xl font-bold text-purple-700">2,18</div>
+<p class="text-xs text-gray-600">kg CO₂/10km</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right column - Validation and Tools -->
+<div class="space-y-4">
+<!-- Validation Tools -->
+<div class="animate-slide-right animate-delay-300">
+<div class="source-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-check-double text-teal-500 mr-2"></i>
+<span class="emoji-accent">✅</span>Outils de Validation
                         </h2>
-                        
-                        <div class="space-y-3">
-                            <div class="source-item">
-                                <div class="flex items-start">
-                                    <div class="source-icon bg-teal-500">
-                                        <i class="fas fa-calculator"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-gray-800 text-sm">MyImpact Tool</p>
-                                        <p class="text-xs text-gray-600 mb-1">Validation des calculs d'empreinte carbone</p>
-                                        <p class="text-xs text-blue-600">myimpact.isit-europe.org</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="source-item">
-                                <div class="flex items-start">
-                                    <div class="source-icon bg-orange-500">
-                                        <i class="fas fa-recycle"></i>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold text-gray-800 text-sm">Systnaps DATA M4R de la solution Data Recycling®</p>
-                                        <p class="text-xs text-gray-600 mb-1">Méthodologie d'éco-gouvernance</p>
-                                        <p class="text-xs text-blue-600">Économie circulaire des données</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Methodology Validation -->
-                <div class="animate-slide-right animate-delay-600">
-                    <div class="validation-highlight">
-                        <div class="flex items-center justify-center mb-3">
-                            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3">
-                                <i class="fas fa-shield-alt text-white"></i>
-                            </div>
-                            <h3 class="text-lg font-bold text-gray-800">
-                                <span class="emoji-accent">🛡️</span>Validation Méthodologique
+<div class="space-y-3">
+<div class="source-item">
+<div class="flex items-start">
+<div class="source-icon bg-teal-500">
+<i class="fas fa-calculator"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">MyImpact Tool</p>
+<p class="text-xs text-gray-600 mb-1">Validation des calculs d'empreinte carbone</p>
+<p class="text-xs text-blue-600">myimpact.isit-europe.org</p>
+</div>
+</div>
+</div>
+<div class="source-item">
+<div class="flex items-start">
+<div class="source-icon bg-orange-500">
+<i class="fas fa-recycle"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-800 text-sm">Systnaps Data M4R®</p>
+<p class="text-xs text-gray-600 mb-1">Méthodologie d'éco-gouvernance</p>
+<p class="text-xs text-blue-600">Économie circulaire des données</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Methodology Validation -->
+<div class="animate-slide-right animate-delay-600">
+<div class="validation-highlight">
+<div class="flex items-center justify-center mb-3">
+<div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-3">
+<i class="fas fa-shield-alt text-white"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-800">
+<span class="emoji-accent">🛡️</span>Validation Méthodologique
                             </h3>
-                        </div>
-                        
-                        <div class="space-y-3 text-sm">
-                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                                <p class="text-blue-800 leading-relaxed">
-                                    <span class="emoji-accent">✓</span>
+</div>
+<div class="space-y-3 text-sm">
+<div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+<p class="text-blue-800 leading-relaxed">
+<span class="emoji-accent">✓</span>
                                     Alignement avec les <strong>standards industriels</strong> via MyImpact
                                 </p>
-                            </div>
-                            
-                            <div class="bg-green-50 border border-green-200 rounded-lg p-3">
-                                <p class="text-green-800 leading-relaxed">
-                                    <span class="emoji-accent">✓</span>
+</div>
+<div class="bg-green-50 border border-green-200 rounded-lg p-3">
+<p class="text-green-800 leading-relaxed">
+<span class="emoji-accent">✓</span>
                                     Conformité aux recommandations du <strong>GHG Protocol</strong>
+</p>
+</div>
+<div class="bg-purple-50 border border-purple-200 rounded-lg p-3">
+<p class="text-purple-800 leading-relaxed">
+<span class="emoji-accent">✓</span>
+                                    Méthode <strong>Data M4R®</strong> certifiée Systnaps
                                 </p>
-                            </div>
-                            
-                            <div class="bg-purple-50 border border-purple-200 rounded-lg p-3">
-                                <p class="text-purple-800 leading-relaxed">
-                                    <span class="emoji-accent">✓</span>
-                                    Méthode <strong>DATA M4R de la solution Data Recycling®</strong> certifiée Systnaps
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Additional Resources -->
-                <div class="animate-slide-right animate-delay-600">
-                    <div class="source-card">
-                        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
-                            <i class="fas fa-external-link-alt text-cyan-500 mr-2"></i>
-                            <span class="emoji-accent">🔗</span>Ressources Complémentaires
+</div>
+</div>
+</div>
+</div>
+<!-- Additional Resources -->
+<div class="animate-slide-right animate-delay-600">
+<div class="source-card">
+<h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+<i class="fas fa-external-link-alt text-cyan-500 mr-2"></i>
+<span class="emoji-accent">🔗</span>Ressources Complémentaires
                         </h2>
-                        
-                        <div class="space-y-2">
-                            <div class="bg-gray-50 rounded-lg p-2">
-                                <p class="text-xs text-gray-700">
-                                    <span class="emoji-accent">📖</span>
-                                    <strong>ISO 14064</strong> - Standards de quantification GES
+<div class="space-y-2">
+<div class="bg-gray-50 rounded-lg p-2">
+<p class="text-xs text-gray-700">
+<span class="emoji-accent">📖</span>
+<strong>ISO 14064</strong> - Standards de quantification GES
                                 </p>
-                            </div>
-                            
-                            <div class="bg-gray-50 rounded-lg p-2">
-                                <p class="text-xs text-gray-700">
-                                    <span class="emoji-accent">🌍</span>
-                                    <strong>Carbon Trust</strong> - Méthodologies mesure carbone
+</div>
+<div class="bg-gray-50 rounded-lg p-2">
+<p class="text-xs text-gray-700">
+<span class="emoji-accent">🌍</span>
+<strong>Carbon Trust</strong> - Méthodologies mesure carbone
                                 </p>
-                            </div>
-                            
-                            <div class="bg-gray-50 rounded-lg p-2">
-                                <p class="text-xs text-gray-700">
-                                    <span class="emoji-accent">🏭</span>
-                                    <strong>IEA</strong> - Données énergétiques sectorielles
+</div>
+<div class="bg-gray-50 rounded-lg p-2">
+<p class="text-xs text-gray-700">
+<span class="emoji-accent">🏭</span>
+<strong>IEA</strong> - Données énergétiques sectorielles
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center">
-                    <i class="fas fa-book mr-2"></i>
-                    <span>Sources validées et référencées</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-check-circle mr-2"></i>
-                    <span>Méthodologie certifiée</span>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <span class="font-bold">9 / 12</span>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="fas fa-book mr-2"></i>
+<span>Sources validées et référencées</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle mr-2"></i>
+<span>Méthodologie certifiée</span>
+</div>
+</div>
+</div>
+<!-- Slide Number -->
+<div class="slide-number">9</div>
+</div>
 </body>
 </html>
 <!DOCTYPE html>
 
-<html lang="fr">
+<html data-theme="light" lang="fr">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -3604,6 +3611,16 @@ Réduction de 70 à 90% des émissions CO₂
             font-size: 1.25em;
             margin-right: 0.5rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -3730,7 +3747,7 @@ Réduction de 70 à 90% des émissions CO₂
 <i class="fas fa-recycle"></i>
 </div>
 <div>
-<p class="font-semibold text-gray-800">Méthodologie DATA M4R de la solution Data Recycling®</p>
+<p class="font-semibold text-gray-800">Méthodologie Data M4R®</p>
 <p class="text-xs text-gray-600">Économie circulaire des données</p>
 </div>
 </div>
@@ -3739,7 +3756,7 @@ Réduction de 70 à 90% des émissions CO₂
 <i class="fas fa-leaf"></i>
 </div>
 <div>
-<p class="font-semibold text-gray-800">Réduction jusqu'à 70 à 90%</p>
+<p class="font-semibold text-gray-800">Réduction significative</p>
 <p class="text-xs text-gray-600">Avec énergie renouvelable</p>
 </div>
 </div>
@@ -3759,8 +3776,8 @@ Réduction de 70 à 90% des émissions CO₂
 <p class="text-xs text-gray-600">Traçabilité</p>
 </div>
 <div class="bg-green-50 border border-green-200 rounded-lg p-3 text-center">
-<div class="text-2xl font-bold text-green-700">70 à 90%</div>
-<p class="text-xs text-gray-600">Réduction possible</p>
+<div class="text-2xl font-bold text-green-700">Réduction</div>
+<p class="text-xs text-gray-600">significative</p>
 </div>
 <div class="bg-orange-50 border border-orange-200 rounded-lg p-3 text-center">
 <div class="text-2xl font-bold text-orange-700">ROI</div>
@@ -3801,20 +3818,13 @@ Réduction de 70 à 90% des émissions CO₂
 </div>
 </div>
 </div>
+<!-- Slide Number -->
+<div class="slide-number">10</div>
 <!-- Footer -->
 <div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
 <div class="flex items-center space-x-4">
 <div class="flex items-center">
-<i class="fas fa-lightbulb mr-2"></i>
-<span>Synthèse des bénéfices</span>
 </div>
-<div class="flex items-center">
-<i class="fas fa-handshake mr-2"></i>
-<span>Partenariat durable</span>
-</div>
-</div>
-<div class="flex items-center">
-<span class="font-bold">10 / 12</span>
 </div>
 </div>
 </div>
@@ -3822,7 +3832,7 @@ Réduction de 70 à 90% des émissions CO₂
 </html>
 <!DOCTYPE html>
 
-<html lang="fr">
+<html data-theme="light" lang="fr">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -4013,13 +4023,23 @@ Réduction de 70 à 90% des émissions CO₂
             top: 1.5rem;
             right: 2rem;
             font-weight: 700;
-            color: #374151;
+            color: #F59E0B;
             font-size: 1.125rem;
         }
         
         .emoji-accent {
             font-size: 1.25em;
             margin-right: 0.5rem;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -4034,7 +4054,7 @@ Réduction de 70 à 90% des émissions CO₂
 </div>
 <!-- Systnaps branding -->
 <div class="systnaps-branding">
-<span class="systnaps-accent">Systnaps</span>
+<span>Systnaps</span>
 </div>
 <!-- Hero section -->
 <div class="text-center max-w-5xl animate-slide-up mb-8">
@@ -4063,7 +4083,7 @@ Réduction de 70 à 90% des émissions CO₂
 <span class="emoji-accent">👩‍💼</span>Jawaher ALLALA
                     </div>
 <p class="text-sm text-gray-600 mb-2">CEO Systnaps</p>
-<p class="text-blue-600 font-semibold">jallala@systnaps.com</p>
+<p class="text-blue-600 font-semibold">allala@systnaps.com</p>
 </div>
 <div class="contact-card mx-auto" style="width: 100%; max-width: 300px;">
 <div class="contact-avatar bg-gradient-to-r from-purple-500 to-purple-600">
@@ -4100,7 +4120,7 @@ Réduction de 70 à 90% des émissions CO₂
 <i class="fas fa-recycle"></i>
 </div>
 <div>
-<p class="font-semibold text-gray-800">DATA M4R de la solution Data Recycling®</p>
+<p class="font-semibold text-gray-800">Data M4R®</p>
 <p class="text-xs text-gray-600">Économie circulaire des données</p>
 </div>
 </div>
@@ -4158,26 +4178,11 @@ Réduction de 70 à 90% des émissions CO₂
                     </h2>
 </div>
 <p class="text-xl text-gray-700 leading-relaxed mb-6">
-                    Contactez-nous dès aujourd'hui pour une <strong>consultation gratuite</strong> et découvrez comment optimiser l'impact environnemental de vos données.
-                </p>
+                    Contactez-nous dès aujourd'hui pour une <strong>consultation gratuite</strong> et découvrez comment optimiser l'impact environnemental de vos données.</p>
 </div>
 </div>
-<!-- Footer -->
-<div class="absolute bottom-8 left-16 right-16 flex justify-between items-center text-sm text-gray-500">
-<div class="flex items-center space-x-4">
-<div class="flex items-center">
-<i class="fas fa-handshake mr-2"></i>
-<span>Votre partenaire en éco-gouvernance</span>
-</div>
-<div class="flex items-center">
-<i class="fas fa-phone mr-2"></i>
-<span>01 48 72 07 11</span>
-</div>
-</div>
-<div class="flex items-center">
-<span class="font-bold">11 / 12</span>
-</div>
-</div>
+<!-- Slide Number -->
+<div class="slide-number">11</div>
 </div>
 </body>
 </html>
@@ -4328,6 +4333,16 @@ Réduction de 70 à 90% des émissions CO₂
             font-size: 1.4em;
             margin-right: 0.75rem;
         }
+        
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f5c8c;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -4374,7 +4389,7 @@ Réduction de 70 à 90% des émissions CO₂
                     </h2>
 </div>
 <p class="text-2xl text-gray-700 leading-relaxed mb-8">
-                    La méthodologie <strong>DATA M4R de la solution Data Recycling®</strong> de Systnaps vous accompagne dans la mesure, l'optimisation et la réduction de l'empreinte carbone de vos données numériques.
+                    La méthodologie <strong>Data M4R®</strong> de Systnaps vous accompagne dans la mesure, l'optimisation et la réduction de l'empreinte carbone de vos données numériques.
                 </p>
 <div class="grid grid-cols-2 gap-8 mb-8">
 <!-- Contact info -->
@@ -4383,7 +4398,7 @@ Réduction de 70 à 90% des émissions CO₂
 <span class="emoji-accent">📞</span>Contactez-nous
                         </h3>
 <div class="space-y-2">
-<p class="text-blue-700 font-semibold">📧 contact@systnaps.com</p>
+<p class="text-blue-700 font-semibold">📧 <a class="__cf_email__" data-cfemail="1f7c70716b7e7c6b5f6c666c6b717e6f6c317c7072" href="/cdn-cgi/l/email-protection">[email protected]</a></p>
 <p class="text-blue-700 font-semibold">📱 01 48 72 07 11</p>
 <p class="text-blue-700 font-semibold">🌐 www.systnaps.com</p>
 </div>
@@ -4408,13 +4423,8 @@ Réduction de 70 à 90% des émissions CO₂
 </div>
 </div>
 </div>
-<!-- Footer -->
-<div class="absolute bottom-8 right-16 flex justify-end items-center text-gray-500">
-<div class="flex items-center text-base">
-<span class="font-bold">12 / 12</span>
+<!-- Slide Number -->
+<div class="slide-number">12</div>
 </div>
-</div>
-</div>
-</body>
-
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
